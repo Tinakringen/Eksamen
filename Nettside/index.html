@@ -13,43 +13,43 @@
 <body>
     <div id="grid-container">
         <header>
-            <nav>
+            <nav id="nav-search">
                 <form id="søk">
                     <input id="søkebar" type="search" placeholder="Søk her" title="Search">
                     <button id="knapp" type="submit" title="Søk etter"><i class="fa-solid fa-magnifying-glass"></i></button>
                 </form>
             </nav>
-            <nav id="main-nav">
-                <ol>
+            <nav class="main-nav">
+                <ul class="main-nav">
                     <li><a href="index.html">Hjem</a></li>
                     <li><a href="product.html">Produkter</a></li>
                     <li><a href="index.html" id="logo">Logo</a></li>
                     <li><a href="#">Kategorier</a></li>
                     <li><a href="#">Kontakt oss</a></li>
-                </ol>
+                </ul>
             </nav>
             <nav>
                 <ul id="icons">
                     <li><a href="#"><i class="fa-regular fa-user"></i></a></li>
                     <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
-                    <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                    <li><a href="checkout.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
                 </ul>
             </nav>
         </header>
         <main>
             <section id="banner">
-                    <h1>At vero eos et aus et iusto lorem lo imiusto odio dgnissim </h1>
+                    <h1>At vero eos et aus et iusto lorem lo imi usto odio dgnissim </h1>
                     <p>minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</p>
                     <button id="btn1"><a href="#">Les mer</a></button>
             </section>
-            <section>
+            <section id="the-best">
                 <h2>Våre mest populære produkter</h2>
                 <p>Oppdag det beste av det beste</p>
-                    <ul id="popular">
-                        <li><a href="#" class="btn">New product</a></li>
-                        <li><a href="#" class="btn">Special prize</a></li>
-                        <li><a href="#" class="btn">Best sellers</a></li>
-                    </ul>
+            </section>
+            <section id="popular">
+                <p><a href="#" id="new-prod">New product</a></p>
+                <p><a href="#" class="btn">Special prize</a></p>
+                <p><a href="#" class="btn">Best sellers</a></p>
             </section>
             <section id="product-container">
                 <figure class="image-container">
@@ -60,13 +60,13 @@
                         <h3>Product name</h3>
                         <p>Kr 1999</p>
                     </article>
-                    <ul class="rating">
+                    <ul class="stars">
                         <li><i class="fa-solid fa-star"></i></li>
                         <li><i class="fa-solid fa-star"></i></li>
                         <li><i class="fa-solid fa-star"></i></li>
                         <li><i class="fa-solid fa-star"></i></li>
                         <li><i class="fa-regular fa-star"></i></li>
-                        <li class="review">842 reviews</li>
+                        <li class="stars">842 reviews</li>
                     </ul>
                     </figcaption>
                 </figure>
@@ -78,13 +78,13 @@
                         <h3>Product name</h3>
                         <p>Kr 1999</p>
                     </article>
-                    <ul class="rating">
+                    <ul class="stars">
                         <li><i class="fa-solid fa-star"></i></li>
                         <li><i class="fa-solid fa-star"></i></li>
                         <li><i class="fa-solid fa-star"></i></li>
                         <li><i class="fa-solid fa-star"></i></li>
                         <li><i class="fa-regular fa-star"></i></li>
-                        <li class="review">842 reviews</li>
+                        <li class="stars">842 reviews</li>
                     </ul>
                     </figcaption>
                 </figure>
@@ -96,13 +96,13 @@
                         <h3>Product name</h3>
                         <p>Kr 1999</p>
                     </article>
-                    <ul class="rating">
+                    <ul class="stars">
                         <li><i class="fa-solid fa-star"></i></li>
                         <li><i class="fa-solid fa-star"></i></li>
                         <li><i class="fa-solid fa-star"></i></li>
                         <li><i class="fa-solid fa-star"></i></li>
                         <li><i class="fa-regular fa-star"></i></li>
-                        <li class="review">842 reviews</li>
+                        <li class="stars">842 reviews</li>
                     </ul>
                     </figcaption>
                 </figure>
@@ -114,13 +114,13 @@
                         <h3>Product name</h3>
                         <p>Kr 1999</p>
                     </article>
-                    <ul class="rating">
+                    <ul class="stars">
                         <li><i class="fa-solid fa-star"></i></li>
                         <li><i class="fa-solid fa-star"></i></li>
                         <li><i class="fa-solid fa-star"></i></li>
                         <li><i class="fa-solid fa-star"></i></li>
                         <li><i class="fa-regular fa-star"></i></li>
-                        <li class="review">842 reviews</li>
+                        <li class="stars">842 reviews</li>
                     </ul>
                     </figcaption>
                 </figure>
@@ -132,13 +132,13 @@
                         <h3>Product name</h3>
                         <p>Kr 1999</p>
                     </article>
-                    <ul class="rating">
+                    <ul class="stars">
                         <li><i class="fa-solid fa-star"></i></li>
                         <li><i class="fa-solid fa-star"></i></li>
                         <li><i class="fa-solid fa-star"></i></li>
                         <li><i class="fa-solid fa-star"></i></li>
                         <li><i class="fa-regular fa-star"></i></li>
-                        <li class="review">842 reviews</li>
+                        <li class="stars">842 reviews</li>
                     </ul>
                     </figcaption>
                 </figure>
@@ -150,63 +150,148 @@
                         <h3>Product name</h3>
                         <p>Kr 1999</p>
                     </article>
-                    <ul class="rating">
+                    <ul class="stars">
                         <li><i class="fa-solid fa-star"></i></li>
                         <li><i class="fa-solid fa-star"></i></li>
                         <li><i class="fa-solid fa-star"></i></li>
                         <li><i class="fa-solid fa-star"></i></li>
                         <li><i class="fa-regular fa-star"></i></li>
-                        <li class="review">842 reviews</li>
+                        <li class="stars">842 reviews</li>
                     </ul>
                     </figcaption>
                 </figure>
             </section>
-            <section>
+            <section id="explore-categories">
                 <h2>Våre mest populære kategorier</h2>
                 <p>Oppdag det beste av det beste</p>
             </section>
-            <section>
-                <figure class="image-container">
-                    <img src="https://picsum.photos/id/21/400/400" alt="kategori bilde">
-                    <figcaption class="categories">
-                        <h3>Category 1</h3>
-                    </figcaption>
+            <section class="categories">
+                <figure class="category-box">
+                    <img src="https://picsum.photos/id/29/400/400" alt="Category photo - snowy mountain">
+                    <h4>CATEGORY 1</h4>
                 </figure>
-                <figure class="image-container">
-                    <img src="https://picsum.photos/id/90/400/400" alt="kategori bilde">
-                    <figcaption class="categories">
-                        <h3>Category 2</h3>
-                    </figcaption>
+                <figure class="category-box">
+                    <img src="https://picsum.photos/id/42/400/400" alt="category photo - coffe table">
+                    <h4>CATEGORY 2</h4>
                 </figure>
-                <figure id="category3">
-                    <img src="https://picsum.photos/id/250/700/700" alt="kategori bilde">
-                    <figcaption class="categories">
-                        <h3>Category 3</h3>
-                    </figcaption>
+                <figure class="category-box">
+                    <img src="https://picsum.photos/id/60/400/400" alt="category photo - forest" id="category3">
+                    <h4>CATEGORY 3</h4>
                 </figure>
-                <figure class="image-container">
-                    <img src="https://picsum.photos/id/113/700/700" alt="kategori bilde">
-                    <figcaption class="categories">
-                        <h3>Category 4</h3>
-                    </figcaption>
+                <figure class="category-box">
+                    <img src="https://picsum.photos/id/102/400/400" alt="category photo - raspberries">
+                    <h4>CATEGORY 4</h4>
                 </figure>
-                <figure class="image-container">
-                    <img src="https://picsum.photos/id/26/400/400" alt="kategori bilde">
-                    <figcaption class="categories">
-                        <h3>Category 5</h3>
-                    </figcaption>
+                <figure class="category-box">
+                    <img src="https://picsum.photos/id/129/400/400" alt="category photo - two persons on a bench">
+                    <h4>CATEGORY 5</h4>
                 </figure>
+            </section>
+            <section id="review">
+                <h3>Anmeldelser</h3>  
+                <div class="scroll-container">
+                    <article class="review-card">
+                        <figure>
+                            <img src="https://picsum.photos/id/433/400/400" alt="selfie bear">
+                            <h5>Jørn Bjørn</h5>
+                                <ul class="stars">
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-regular fa-star"></i></li>
+                                    <li><i class="fa-regular fa-star"></i></li>
+                                </ul>
+                            <p>Food ipsum dolor amet spare ribs frankfurter apples hamburger meatloaf. Jicama carrots jerky Artichoke cucumber Kohlrabi Asparagus venison Mushrooms Tomatillo Eggplant Chives tenderloin Leeks spices.</p>
+                        </figure>
+                    </article>
+                    <article class="review-card">
+                        <figure>
+                            <img src="https://picsum.photos/id/582/400/400" alt="selfie wolf">
+                            <h5>Ulf Ulv</h5>
+                                <ul class="stars">
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-regular fa-star"></i></li>
+                                </ul>
+                            <p>Food ipsum dolor amet spare ribs frankfurter apples hamburger meatloaf. Jicama carrots jerky Artichoke cucumber Kohlrabi Asparagus venison Mushrooms Tomatillo Eggplant Chives tenderloin Leeks spices.</p>
+                        </figure>
+                    </article>
+                    <article class="review-card">
+                        <figure>
+                            <img src="https://picsum.photos/id/783/400/400" alt="selfie monkey">
+                            <h5>Ape Leif</h5>
+                                <ul class="stars">
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-regular fa-star"></i></li>
+                                    <li><i class="fa-regular fa-star"></i></li>
+                                </ul>
+                            <p>Food ipsum dolor amet spare ribs frankfurter apples hamburger meatloaf. Jicama carrots jerky Artichoke cucumber Kohlrabi Asparagus venison Mushrooms Tomatillo Eggplant Chives tenderloin Leeks spices.</p>
+                        </figure>
+                    </article>
+                    <article class="review-card">
+                        <figure>
+                            <img src="https://picsum.photos/id/1074/400/400" alt="selfie lion">
+                            <h5>Simba??</h5>
+                                <ul class="stars">
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-regular fa-star"></i></li>
+                                    <li><i class="fa-regular fa-star"></i></li>
+                                    <li><i class="fa-regular fa-star"></i></li>
+                                </ul>
+                            <p>Food ipsum dolor amet spare ribs frankfurter apples hamburger meatloaf. Jicama carrots jerky Artichoke cucumber Kohlrabi Asparagus venison Mushrooms Tomatillo Eggplant Chives tenderloin Leeks spices.</p>
+                        </figure>
+                    </article>
+                </div>
             </section>
         </main>
+        <hr id="main-hr">
         <footer>
-            <section>
-                <h2>Om oss</h2>
-                <p>Et lite stykke tekst om oss</p>
+            <section id="footer-logo">
+                <h2>Logo</h2>
+                <p>Lorem Khaled Ipsum is a major key to success. Eliptical talk.</p>
             </section>
-            <section>
-                <h2>Kontakt oss</h2>
-                <p>Telefon: 12345678</p>
-                <p>E-post:
+            <section id="footer-contact">
+                <article>
+                    <h6>Kontakt</h6>
+                    <p class="contact-icons">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <strong>Adresse:</strong> B R A Veien 4, 1757 Halden
+                    </p>
+                    <p class="contact-icons">
+                        <i class="fa-solid fa-phone"></i>
+                        <strong>Telefon:</strong> 69 60 80 00
+                    </p>
+                    <p class="contact-icons">
+                        <i class="fa-solid fa-envelope"></i>
+                        <strong>E-post:</strong> halden@hiof.no
+                    </p>
+                    <p class="contact-icons">
+                        <i class="fa-solid fa-clock"></i>
+                        <strong>Åpningstider:</strong> Stenger 15:00
+                    </p>
+                </article>
+                <aside id="footer-shortcut">
+                    <h6>Snarveier</h6>
+                        <ul>
+                            <li><a href="#">Produkter</a></li>
+                            <li><a href="#">Kategorier</a></li>
+                            <li><a href="#">Kontakt oss</a></li>
+                        </ul>
+                </aside>
+            </section>
+            <section id="footer-social">
+                <h6>Sosiale Medier</h6>
+                <ul id="social-icons">
+                    <li><i class="fa-brands fa-instagram"></i></li>
+                    <li><i class="fa-brands fa-facebook"></i></li>
+                    <li><i class="fa-brands fa-linkedin"></i></li>
+                    <li><i class="fa-brands fa-pinterest"></i></li>
+                </ul>
             </section>
         </footer>
     </div>
