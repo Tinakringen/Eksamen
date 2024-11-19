@@ -573,9 +573,151 @@ Example: margin-right: 20px; */
         margin-top: 0;
     }
 }
-
 #checkout-hr{
     margin-top: 3em;
     border: 1.3px solid rgb(209, 209, 209);
+}
 
+/* Produktside */
+
+#products-nav{
+    ul{   
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        justify-content: left;
+        padding-left: 0;
+        margin-top: 3em;
+    }
+    a{
+        text-decoration: none;
+        color: #000;
+        padding: 10px;
+    }
+    li{
+        list-style: none;
+    }
+}
+/*Promt: How can I semantically make space between a word and < sign?*/
+/*Results: Use the ::before pseudo-element. 
+Example: .breadcrumb-item + .breadcrumb-item::before{
+content: ">";
+margin: 0 10px;*/
+
+.list-product + .list-product::before{
+    content: ">";
+    padding: 2px;
+}
+#product{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: repeat(3, auto);
+    gap: 1em;
+    margin-top: 1.5em;
+
+    #img1{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        width: 100%;
+    }
+    #img2{
+        grid-column: 1/2;
+        grid-row: 2/3; 
+        width: 100%;
+    }
+    #img3{
+        grid-column: 1/2;
+        grid-row: 3/4;
+        width: 100%;
+    }
+    #img4{
+        grid-column: 2/3;
+        grid-row: 1/4;
+        height: 100%;
+    }
+}
+#product img{
+    width: 100%;
+    height: auto;
+}
+#product-info{
+    h1{
+        margin-bottom: 0;
+    }
+    h2{
+        margin-top: 0.5em;
+        font-weight: 10;
+        color: rgb(128, 128, 128);
+        text-decoration: underline;
+    }
+}
+#choose-size{
+    select{
+        margin-top: 2em;
+        width: 100%;
+        padding: 1.2em;
+        background-color:rgb(225, 225, 225);
+        border-radius: 0.4em;
+    }
+}
+#add-to-cart{
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
+    display: flex;
+    justify-content: row;
+    justify-content: space-between;
+    gap: 1em;
+
+    #cartbtn{
+        width: 100%;
+        margin: 0;
+        padding: 1.2em;
+        background-color: #000;
+        color: #fff;
+        border-color: transparent;
+    }
+    #favorite{
+        padding: 10px 15px;
+        border: 1.5px solid;
+        margin: 0;
+    }
+    i{
+        font-size: 1.3em;
+    }
+}
+.product-hr{
+    margin-top: 2.5em;
+    margin-bottom: 2.5em;
+    border: 1.2px solid rgb(144, 144, 144);
+}
+.dropmeny{
+    display: block;
+    cursor: pointer;
+    ul{
+        margin-top: 2em;
+    }
+    li{
+        margin-left: 2em;
+    }   
+}
+.dropmeny summary{
+    display: flex;
+    justify-content:space-between;
+    font-weight: 600;
+    margin-left: 1em;
+    list-style: none;
+    align-items: center;
+}
+.dropmeny summary::after{
+    content: "+";
+    font-size: 1.5em;
+    margin-right: 1em;
+}
+#product-details{
+    p{
+        margin-left: 1em;
+        margin-top: 2em;
+        margin-right: 1.5em;
+    }
 }

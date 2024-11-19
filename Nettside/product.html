@@ -11,32 +11,98 @@
     <title>Eksamensoppgave</title>
 </head>
 <body>
-    <div id="grid-container">
-        <header>
-            <nav id="nav-search">
-                <form id="søk">
-                    <input id="søkebar" type="search" placeholder="Søk her" title="Search">
-                    <button id="knapp" type="submit" title="Søk etter"><i class="fa-solid fa-magnifying-glass"></i></button>
-                </form>
-            </nav>
-            <nav class="main-nav">
-                <ul class="main-nav">
-                    <li><a href="index.html">Hjem</a></li>
-                    <li><a href="product.html">Produkter</a></li>
-                    <li><a href="index.html" id="logo">Logo</a></li>
-                    <li><a href="#">Kategorier</a></li>
-                    <li><a href="#">Kontakt oss</a></li>
-                </ul>
-            </nav>
+    <header>
+        <nav id="nav-search">
+            <form id="søk">
+                <input id="søkebar" type="search" placeholder="Søk her" title="Search">
+                <button id="knapp" type="submit" title="Søk etter"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+        </nav>
+        <nav class="main-nav">
+            <ul class="main-nav">
+                <li><a href="index.html">Hjem</a></li>
+                <li><a href="product.html">Produkter</a></li>
+                <li><a href="index.html" id="logo">Logo</a></li>
+                <li><a href="#">Kategorier</a></li>
+                <li><a href="#">Kontakt oss</a></li>
+            </ul>
+        </nav>
+        <nav>
+            <ul id="icons">
+                <li><a href="#"><i class="fa-regular fa-user"></i></a></li>
+                <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                <li><a href="checkout.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="products-nav">
             <nav>
-                <ul id="icons">
-                    <li><a href="#"><i class="fa-regular fa-user"></i></a></li>
-                    <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
-                    <li><a href="checkout.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                <ul>
+                    <li class="list-product"><a href="index.html">Hjem</a></li>
+                    <li class="list-product"><a href="#">Kategori</a></li>
+                    <li class="list-product"><a href="#"><strong>Produktnavn</strong></a></li>
                 </ul>
             </nav>
-        </header>
-        <main>
-       
+        </section> 
+        <article id="product">
+            <img id="img1" src="https://picsum.photos/id/96/400/400" alt="White heels">
+            <img id="img2" src="https://picsum.photos/id/96/400/400" alt="White heels">
+            <img id="img3" src="https://picsum.photos/id/96/400/400" alt="White heels">
+            <img id="img4" src="https://picsum.photos/id/96/400/400" alt="White heels">
+        </article>
+        <section id="product-info">
+            <h1>Produktnavn</h1>
+            <h2>Merkenavn</h2>
+            <p>799 kr inkl. mva.</p>
+            <p>Farge: <strong>svart</strong></p>
+            <label id="choose-size" for="size">
+                <select name="size" id="size" required>
+                    <option value="">Velg størrelse</option>
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                </select>
+            </label>
+            <figure id="add-to-cart">
+                <button id="cartbtn" class="add to cart">Legg i handlekurv</button>
+                <button id="favorite" type="button"><i class="fa-regular fa-heart"></i></button>
+            </figure>
+        </section>
+        <hr class="product-hr">
+        <section id="product-description">
+            <details class="dropmeny">
+                <summary>Materiale og vedlikehold</summary>
+                <ul id="materials"></ul>
+                    <li>Overmateriale: 95% viskose, 5% elastan</li>
+                    <li>Materiale ermer: 100% polyester</li>
+                    <li>Materiale: jersey</li>
+                </ul>
+            </details>
+        </section>
+        <hr class="product-hr">
+        <section id="product-details">
+            <details class="dropmeny">
+                <summary>Produktdetaljer</summary>
+                <p>
+                    You should never complain, complaining is a weak emotion, 
+                    you got life, we breathing, we blessed.<br> The weather is amazing, 
+                    walk with me through the pathway of more success. 
+                </p>
+            </details>
+        </section>
+        <hr class="product-hr">
+        <section id="product-sizes">
+            <details class="dropmeny">
+                <summary>Størrelsestabell</summary>
+                <p>
+                    Sjekk hvordan din vanlige størrelse konverterer til andre strørrelser i vår størrelsesguide.
+                    Husk at dette kun er en generell guide og at størrelsene kan variere i forhold til merke og modell.
+                </p>
+                
+            </details>
+        </section>
+        <hr class="product-hr"> 
+    </main>
 </body>
 </html>
