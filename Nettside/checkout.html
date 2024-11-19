@@ -71,34 +71,8 @@
                             <i class="fa-solid fa-trash"></i>
                             </figure>
                         </article>
-                        </section>
-                        <section class="checkout-section">
-                            <img src="https://picsum.photos/id/21/400/400" alt="white high heels">
-                            <article class="checkout-card">
-                                <h3><strong>PRODUCT NAME</strong></h3> 
-                                <p>Kr 599</p>
-                                <p>Farge: Hvit</p>
-                                <label class="options">
-                                    Størrelse
-                                    <select name="size">
-                                    <option value="XS">XS</option>
-                                    <option value="S">S</option>
-                                    <option value="M">M</option>
-                                    <option value="L">L</option>
-                                    <option value="XL">XL</option>
-                                    </select>
-                                </label>
-                                <label class="options">
-                                    Antall
-                                    <input type="number" placeholder="1" class="number" min="1" max="10">
-                                </label>
-                                <figure class="shop-icons">
-                                <i class="fa-regular fa-heart"></i>
-                                <i class="fa-solid fa-trash"></i>
-                                </figure>
-                            </article>
-                        </section>
-                        <section class="checkout-section">
+                    </section>
+                    <section class="checkout-section">
                             <img src="https://picsum.photos/id/21/400/400" alt="white high heels">
                             <article class="checkout-card">
                                 <h3><strong>PRODUCT NAME</strong></h3> 
@@ -124,8 +98,34 @@
                                 </figure>
                             </article>
                     </section>
+                    <section class="checkout-section">
+                        <img src="https://picsum.photos/id/21/400/400" alt="white high heels">
+                        <article class="checkout-card">
+                            <h3><strong>PRODUCT NAME</strong></h3> 
+                            <p>Kr 599</p>
+                            <p>Farge: Hvit</p>
+                            <label class="options">
+                                Størrelse
+                                <select name="size">
+                                    <option value="XS">XS</option>
+                                    <option value="S">S</option>
+                                    <option value="M">M</option>
+                                    <option value="L">L</option>
+                                    <option value="XL">XL</option>
+                                </select>
+                            </label>
+                            <label class="options">
+                                Antall
+                                <input type="number" placeholder="1" class="number" min="1" max="10">
+                            </label>
+                            <figure class="shop-icons">
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-solid fa-trash"></i>
+                            </figure>
+                        </article>
+                    </section>
                 </div>
-                    <section class="checkout-container2">
+                    <section id="checkout-container2">
                         <h2>2. DINE OPPLYSNINGER</h2>
                         <H3>Leveringsadresse</H3>
                         <form>
@@ -146,8 +146,8 @@
                             <input type="email" id="email" name="email" placeholder="tina-pusen@gmail.no*"><br>
                             <label for="phone">Telefon</label><br>
                             <input type="tel" id="phone" name="phone" placeholder="+47123***12"><br>
-                            <br><input class="save" type="submit" value="Lagre"><br>
-                            <button type="reset" value="reset">Avbryt</button>
+                            <button id="save-button" type="save" value="save">Lagre</button>
+                            <button id="cancel-button" type="reset" value="reset">Avbryt</button>
                         </form>
                     </section>
                     <section id="checkout-container3">

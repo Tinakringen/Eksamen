@@ -73,7 +73,7 @@
         <section id="product-description">
             <details class="dropmeny">
                 <summary>Materiale og vedlikehold</summary>
-                <ul id="materials"></ul>
+                <ul id="materials">
                     <li>Overmateriale: 95% viskose, 5% elastan</li>
                     <li>Materiale ermer: 100% polyester</li>
                     <li>Materiale: jersey</li>
@@ -99,10 +99,301 @@
                     Sjekk hvordan din vanlige størrelse konverterer til andre strørrelser i vår størrelsesguide.
                     Husk at dette kun er en generell guide og at størrelsene kan variere i forhold til merke og modell.
                 </p>
-                
+            <table id="table">
+                <thead>
+                    <tr>
+                        <th>EU</th>
+                        <th>INT</th>
+                        <th>BRYSTVIDDE</th>
+                        <th>LIVVIDDE</th>
+                        <th>HOFTEMÅL</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>32</td>
+                        <td>XXS</td>
+                        <td>76</td>
+                        <td>63</td>
+                        <td>85</td>
+                    </tr>
+                    <tr>
+                        <td>34</td>
+                        <td>XS</td>
+                        <td>80</td>
+                        <td>66</td>
+                        <td>89</td>
+                    </tr>
+                    <tr>
+                        <td>36</td>
+                        <td>S</td>
+                        <td>84</td>
+                        <td>69</td>
+                        <td>93</td>
+                    </tr>
+                    <tr>
+                        <td>38</td>
+                        <td>M</td>
+                        <td>88</td>
+                        <td>72</td>
+                        <td>97</td>
+                    </tr>
+                    <tr>
+                        <td>40</td>
+                        <td>L</td>
+                        <td>92</td>
+                        <td>76</td>
+                        <td>100</td>
+                    </tr>
+                    <tr>
+                        <td>42</td>
+                        <td>XL</td>
+                        <td>96</td>
+                        <td>80</td>
+                        <td>103</td>
+                    </tr>
+                    <tr>
+                        <td>44</td>
+                        <td>XXL</td>
+                        <td>100</td>
+                        <td>85</td>
+                        <td>106</td>
+                    </tr>
+                    <tr>
+                        <td>46</td>
+                        <td>3XL</td>
+                        <td>104</td>
+                        <td>90</td>
+                        <td>109</td>
+                    </tr>
+                    <tr>
+                        <td>48</td>
+                        <td>4XL</td>
+                        <td>110</td>
+                        <td>96.5</td>
+                        <td>114</td>
+                    </tr>
+                    <tr>
+                        <td>50</td>
+                        <td>5XL</td>
+                        <td>116</td>
+                        <td>103</td>
+                        <td>119</td>
+                    </tr>
+                    <tr>
+                        <td>52</td>
+                        <td>6XL</td>
+                        <td>122</td>
+                        <td>109.5</td>
+                        <td>124</td>
+                    </tr>
+                    <tr>
+                        <td>54</td>
+                        <td>7XL</td>
+                        <td>128</td>
+                        <td>116</td>
+                        <td>130</td>
+                    </tr>
+                    <tr>
+                        <td>56</td>
+                        <td>8XL</td>
+                        <td>134</td>
+                        <td>122.5</td>
+                        <td>136</td>
+                    </tr>
+                    <tr>
+                        <td>58</td>
+                        <td>9XL</td>
+                        <td>140</td>
+                        <td>129</td>
+                        <td>142</td>
+                    </tr>
+                    <tr>
+                        <td>60</td>
+                        <td>10XL</td>
+                        <td>146</td>
+                        <td>135.5</td>
+                        <td>148</td>
+                    </tr>
+                </tbody>
+            </table>
             </details>
         </section>
         <hr class="product-hr"> 
+        <section id="product-reviews">
+            <details id="dropmeny-review">
+                <summary>
+                    <h4>Anmeldelser</h4>
+                    <!-- Promt: how can i add icons to the opposite side of the summary? -->
+                    <!--Results: -->
+                    <span class="prod-stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <span id="count">32</span>
+                    </span>
+                </summary>
+                <article id="bjorn-review">
+                    <h5>Jørn Bjørn</h5>
+                    <p>2024-10-02</p>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <p>
+                        Egg whites, turkey sausage, wheat toast, water. 
+                        Of course they don’t want us to eat our breakfast, so we are going to enjoy our breakfast. 
+                        Bless up.
+                    </p>
+                </article>   
+            </details>
+        </section>
+        <section id="similar-products">
+            <h5>Lignende produkter</h5>
+            <a href="#">
+                Se flere lignende produkter
+                <i class="fa-solid fa-arrow-right"></i> 
+            </a>
+            <div class="scroll-container">
+                <figure class="image-container">
+                    <img src="https://picsum.photos/400/400" alt="produkt bilde">
+                    <i class="fa-regular fa-heart heart-icon"></i>
+                    <figcaption>
+                    <article class="price">
+                        <h3>Product name</h3>
+                        <p>Kr 1999</p>
+                    </article>
+                    <ul class="stars">
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-regular fa-star"></i></li>
+                        <li class="stars">842 reviews</li>
+                    </ul>
+                    </figcaption>
+                </figure>
+                <figure class="image-container">
+                    <img src="https://picsum.photos/400/400" alt="produkt bilde">
+                    <i class="fa-regular fa-heart heart-icon"></i>
+                    <figcaption>
+                    <article class="price">
+                        <h3>Product name</h3>
+                        <p>Kr 1999</p>
+                    </article>
+                    <ul class="stars">
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-regular fa-star"></i></li>
+                        <li class="stars">842 reviews</li>
+                    </ul>
+                    </figcaption>
+                </figure>
+                <figure class="image-container">
+                    <img src="https://picsum.photos/400/400" alt="produkt bilde">
+                    <i class="fa-regular fa-heart heart-icon"></i>
+                    <figcaption>
+                    <article class="price">
+                        <h3>Product name</h3>
+                        <p>Kr 1999</p>
+                    </article>
+                    <ul class="stars">
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-regular fa-star"></i></li>
+                        <li class="stars">842 reviews</li>
+                    </ul>
+                    </figcaption>
+                </figure>
+                <figure class="image-container">
+                    <img src="https://picsum.photos/400/400" alt="produkt bilde">
+                    <i class="fa-regular fa-heart heart-icon"></i>
+                    <figcaption>
+                    <article class="price">
+                        <h3>Product name</h3>
+                        <p>Kr 1999</p>
+                    </article>
+                    <ul class="stars">
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-regular fa-star"></i></li>
+                        <li class="stars">842 reviews</li>
+                    </ul>
+                    </figcaption>
+                </figure>
+                <figure class="image-container">
+                    <img src="https://picsum.photos/400/400" alt="produkt bilde">
+                    <i class="fa-regular fa-heart heart-icon"></i>
+                    <figcaption>
+                    <article class="price">
+                        <h3>Product name</h3>
+                        <p>Kr 1999</p>
+                    </article>
+                    <ul class="stars">
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-regular fa-star"></i></li>
+                        <li class="stars">842 reviews</li>
+                    </ul>
+                    </figcaption>
+                </figure>
+        </section>
     </main>
+    <hr id="hr-end">
+    <footer>
+        <section id="footer-logo">
+            <h2>Logo</h2>
+            <p>Lorem Khaled Ipsum is a major key to success. Eliptical talk.</p>
+        </section>
+        <section id="footer-contact">
+            <article>
+                <h6>Kontakt</h6>
+                <p class="contact-icons">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <strong>Adresse:</strong> B R A Veien 4, 1757 Halden
+                </p>
+                <p class="contact-icons">
+                    <i class="fa-solid fa-phone"></i>
+                    <strong>Telefon:</strong> 69 60 80 00
+                </p>
+                <p class="contact-icons">
+                    <i class="fa-solid fa-envelope"></i>
+                    <strong>E-post:</strong> halden@hiof.no
+                </p>
+                <p class="contact-icons">
+                    <i class="fa-solid fa-clock"></i>
+                    <strong>Åpningstider:</strong> Stenger 15:00
+                </p>
+            </article>
+            <aside id="footer-shortcut">
+                <h6>Snarveier</h6>
+                    <ul>
+                        <li><a href="#">Produkter</a></li>
+                        <li><a href="#">Kategorier</a></li>
+                        <li><a href="#">Kontakt oss</a></li>
+                    </ul>
+            </aside>
+        </section>
+        <section id="footer-social">
+            <h6>Sosiale Medier</h6>
+            <ul id="social-icons">
+                <li><i class="fa-brands fa-instagram"></i></li>
+                <li><i class="fa-brands fa-facebook"></i></li>
+                <li><i class="fa-brands fa-linkedin"></i></li>
+                <li><i class="fa-brands fa-pinterest"></i></li>
+            </ul>
+        </section>
+    </footer>
 </body>
 </html>
