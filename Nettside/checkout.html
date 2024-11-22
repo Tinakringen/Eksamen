@@ -25,7 +25,7 @@
                         <li><a href="product.html">Produkter</a></li>
                         <li><a href="index.html" id="logo">Logo</a></li>
                         <li><a href="#">Kategorier</a></li>
-                        <li><a href="#">Kontakt oss</a></li>
+                        <li><a href="#footer-contact">Kontakt oss</a></li>
                     </ul>
                 </nav>
                 <nav>
@@ -44,11 +44,11 @@
             </header>
             <main id="main-checkout">
                 <h1>Kasse</h1>
-                <div class="checkout-container">
-                    <section class="checkout-section">
-                        <h2>1. SHOPPINGBAGEN DIN</h2>
+                <section id="checkout-section">
+                    <h2>1. SHOPPINGBAGEN DIN</h2>
+                    <article class="checkout-card">
                         <img src="https://picsum.photos/id/21/400/400" alt="white high heels">
-                        <article class="checkout-card">
+                        <aside class="checkout-product-info">
                             <h3><strong>PRODUCT NAME</strong></h3> 
                             <p>Kr 599</p>
                             <p>Farge: Hvit</p>
@@ -70,37 +70,37 @@
                             <i class="fa-regular fa-heart"></i>
                             <i class="fa-solid fa-trash"></i>
                             </figure>
-                        </article>
-                    </section>
-                    <section class="checkout-section">
-                            <img src="https://picsum.photos/id/21/400/400" alt="white high heels">
-                            <article class="checkout-card">
-                                <h3><strong>PRODUCT NAME</strong></h3> 
-                                <p>Kr 599</p>
-                                <p>Farge: Hvit</p>
-                                <label class="options">
-                                    Størrelse
-                                    <select name="size">
-                                    <option value="XS">XS</option>
-                                    <option value="S">S</option>
-                                    <option value="M">M</option>
-                                    <option value="L">L</option>
-                                    <option value="XL">XL</option>
-                                    </select>
-                                </label>
-                                <label class="options">
-                                    Antall
-                                    <input type="number" placeholder="1" class="number" min="1" max="10">
-                                </label>
-                                <figure class="shop-icons">
-                                <i class="fa-regular fa-heart"></i>
-                                <i class="fa-solid fa-trash"></i>
-                                </figure>
-                            </article>
-                    </section>
-                    <section class="checkout-section">
+                        </aside>
+                    </article>
+                    <article class="checkout-card">
                         <img src="https://picsum.photos/id/21/400/400" alt="white high heels">
-                        <article class="checkout-card">
+                        <aside class="checkout-product-info">
+                            <h3><strong>PRODUCT NAME</strong></h3> 
+                            <p>Kr 599</p>
+                            <p>Farge: Hvit</p>
+                            <label class="options">
+                                Størrelse
+                                <select name="size">
+                                <option value="XS">XS</option>
+                                <option value="S">S</option>
+                                <option value="M">M</option>
+                                <option value="L">L</option>
+                                <option value="XL">XL</option>
+                                </select>
+                            </label>
+                            <label class="options">
+                                Antall
+                                <input type="number" placeholder="1" class="number" min="1" max="10">
+                            </label>
+                            <figure class="shop-icons">
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-solid fa-trash"></i>
+                            </figure>
+                        </aside>
+                    </article>
+                    <article class="checkout-card">
+                        <img src="https://picsum.photos/id/21/400/400" alt="white high heels">
+                        <aside class="checkout-product-info">
                             <h3><strong>PRODUCT NAME</strong></h3> 
                             <p>Kr 599</p>
                             <p>Farge: Hvit</p>
@@ -122,144 +122,150 @@
                             <i class="fa-regular fa-heart"></i>
                             <i class="fa-solid fa-trash"></i>
                             </figure>
-                        </article>
-                    </section>
-                </div>
-                    <section id="checkout-container2">
-                        <h2>2. DINE OPPLYSNINGER</h2>
-                        <H3>Leveringsadresse</H3>
-                        <form>
-                            <label for="fname">Fornavn</label><br>
-                            <input type="text" id="fname" name="fname" placeholder="Tina*"><br>
-                            <label for="lname">Etternavn</label><br>
-                            <input type="text" id="lname" name="lname" placeholder="Turner*"><br>
-                            <label for="adress">Gateadresse</label><br>
-                            <input type="text" id="adress" name="adress" placeholder="Mølsknesvegen 41*"><br>
-                            <label for="postcode">Postnummer</label><br>
-                            <input type="number" id="postcode" name="postcode" placeholder="1725*"><br>
-                            <label for="place">Poststed</label><br>
-                            <input type="text" id="place" name="place" placeholder="Flornes"><br>
-                        </form> 
-                        <h3>Kontaktinformasjon</h3>
-                        <form>
-                            <label for="email">E-post</label><br>
-                            <input type="email" id="email" name="email" placeholder="tina-pusen@gmail.no*"><br>
-                            <label for="phone">Telefon</label><br>
-                            <input type="tel" id="phone" name="phone" placeholder="+47123***12"><br>
-                            <button id="save-button" type="save" value="save">Lagre</button>
-                            <button id="cancel-button" type="reset" value="reset">Avbryt</button>
-                        </form>
-                    </section>
-                    <section id="checkout-container3">
-                        <h2>3. LEVERING</h2>
-                        <h3>LEVERINGSVALG</h3>
-                        <form action="delivery-card">
-                            <section class="delivery-card">
-                                <input type="radio" name="radio" id="radio1" value="option1" required>
-                                <label for="radio1"><strong>Express Hjemlevering</strong></label>
-                                <p class="days">3-4 virkedager</p>
-                                <p>59 kr <i class="fa-solid fa-truck"></i></p>
-                                <p>
-                                    Bestill hver dag før kl 08:00 for levering neste arbeidsdag
-                                    Leveres hjem til deg før frokost mandag til lørdag.
-                                    For levering til postnummer 4000-7999 er leveringstiden 2 arbeidsdager,
-                                    for postnummer 8000-9999 er leveringstiden 3-4 arbeidsdager.
-                                </p>
-                            </section>
-                            <section class="delivery-card">
-                                <input type="radio" name="radio" id="radio2" value="option2" required>
-                                <label for="radio2"><strong>Express Pakke til utleveringssted</strong></label>
-                                <p class="days">1-3 virkedager</p>
-                                <p>59 kr <i class="fa-solid fa-truck"></i></p>
-                            </section>
-                            <section class="delivery-card">
-                                <input type="radio" name="radio" id="radio3" value="option3" required>
-                                <label for="radio3"><strong>Standard hjemlevering</strong></label>
-                                <p class="days">5-8 virkedager</p>
-                                <p>Gratis <i class="fa-solid fa-box"></i></p>
-                                <p>
-                                Leveres hjem til deg før frokost mandag til lørdag innen 4-7 hverdager.
-                                </p>
-                            </section>
-                        </form>
-                    </section>
-                    <section id="checkout-container4">
-                        <h2>4. BETALING</h2>
-                        <h3>BETAL MED KORT <i class="fa-solid fa-credit-card"></i></h3>
-                        <form id="payment-card">
-                            <label for="card">Kortnummer</label><br>
-                            <input type="number" id="card" name="card" placeholder="1234 5678 9101 1121*"><br>
-                            <label for="date">Utløpsdato</label><br>
-                            <input type="date" id="date" name="date"><br>
-                            <label for="cvc">CVC/CVV</label><br>
-                            <input type="number" id="cvc" name="cvc" placeholder="CVC/CVV"><br>
-                            <hr>
-                        </form>
-                        <section id="purchase">
-                            <h4>Å betale inkl. mva. </h4>
-                            <p id="kr">1 199 kr</p>
-                            <br><input class="save" type="submit" value="Fullfør kjøp"><br>
+                        </aside>
+                    </article>
+                </section>
+                <section id="checkout-container2">
+                    <h2>2. DINE OPPLYSNINGER</h2>
+                    <H3>Leveringsadresse</H3>
+                    <form>
+                        <label for="fname">Fornavn</label><br>
+                        <input type="text" id="fname" name="fname" placeholder="Tina*"><br>
+                        <label for="lname">Etternavn</label><br>
+                        <input type="text" id="lname" name="lname" placeholder="Turner*"><br>
+                        <label for="adress">Gateadresse</label><br>
+                        <input type="text" id="adress" name="adress" placeholder="Mølsknesvegen 41*"><br>
+                        <label for="postcode">Postnummer</label><br>
+                        <input type="number" id="postcode" name="postcode" placeholder="1725*"><br>
+                        <label for="place">Poststed</label><br>
+                        <input type="text" id="place" name="place" placeholder="Flornes"><br>
+                    </form> 
+                    <h3>Kontaktinformasjon</h3>
+                    <form>
+                        <label for="email">E-post</label><br>
+                        <input type="email" id="email" name="email" placeholder="tina-pusen@gmail.no*"><br>
+                        <label for="phone">Telefon</label><br>
+                        <input type="tel" id="phone" name="phone" placeholder="+47123***12"><br>
+                        <button class="save-button" type="button" value="text">Lagre</button>
+                        <button id="cancel-button" type="reset" value="reset">Avbryt</button>
+                    </form>
+                </section>
+                <section id="checkout-container3">
+                    <h2>3. LEVERING</h2>
+                    <h3>LEVERINGSVALG</h3>
+                    <form action="delivery-card">
+                        <article class="delivery-card">
+                            <input type="radio" name="radio" id="radio1" value="option1" required>
+                            <label for="radio1"><strong>Express Hjemlevering</strong></label>
+                            <p class="days">3-4 virkedager</p>
+                            <p>59 kr <i class="fa-solid fa-truck"></i></p>
                             <p>
-                                Du bekrefter herved at opplysningene og dokumentene du har oppgitt er korrekte og fullstendige.
-                                Leverandøren forbeholder seg retten til å heve eller avslutte avtaleforholdet
-                                dersom det foreligger uriktige eller fullstendige opplysninger
+                                Bestill hver dag før kl 08:00 for levering neste arbeidsdag
+                                Leveres hjem til deg før frokost mandag til lørdag.
+                                For levering til postnummer 4000-7999 er leveringstiden 2 arbeidsdager,
+                                for postnummer 8000-9999 er leveringstiden 3-4 arbeidsdager.
                             </p>
-                            <label for="newsletter">
-                                <input type="checkbox" id="newsletter" required>
-                                Ja takk! Send nyhetsbrev til meg.
-                            </label>
-                            <label for="sms">
-                                <br><input type="checkbox" id="sms" required>
-                                Jeg ønsker å motta tekstmeldinger med tilbud og nyheter.
-                            </label> 
-                        </section>
-                    </section>
+                        </article>
+                        <article class="delivery-card">
+                            <input type="radio" name="radio" id="radio2" value="option2" required>
+                            <label for="radio2"><strong>Express Pakke til utleveringssted</strong></label>
+                            <p class="days">1-3 virkedager</p>
+                            <p>59 kr <i class="fa-solid fa-truck"></i></p>
+                        </article>
+                        <article class="delivery-card">
+                            <input type="radio" name="radio" id="radio3" value="option3" required>
+                            <label for="radio3"><strong>Standard hjemlevering</strong></label>
+                            <p class="days">5-8 virkedager</p>
+                            <p>Gratis <i class="fa-solid fa-box"></i></p>
+                            <p>
+                            Leveres hjem til deg før frokost mandag til lørdag innen 4-7 hverdager.
+                            </p>
+                        </article>
+                    </form>
+                </section>
+                <section id="checkout-container4">
+                    <h2>4. BETALING</h2>
+                    <h3>BETAL MED KORT <i class="fa-solid fa-credit-card"></i></h3>
+                    <form id="payment-card">
+                        <label for="card">Kortnummer</label><br>
+                        <input type="number" id="card" name="card" placeholder="1234 5678 9101 1121*"><br>
+                        <label for="date">Utløpsdato</label><br>
+                        <input type="date" id="date" name="date"><br>
+                        <label for="cvc">CVC/CVV</label><br>
+                        <input type="number" id="cvc" name="cvc" placeholder="CVC/CVV"><br>
+                        <hr>
+                    </form>
+                    <article id="purchase">
+                        <h4>Å betale inkl. mva. </h4>
+                        <p id="price-kr">1 199 kr</p>
+                        <button class="save-button" type="button" value="text">Fullfør kjøp</button>
+                        <p id="correct-info">
+                            Du bekrefter herved at opplysningene og dokumentene du har oppgitt er korrekte og fullstendige.
+                            Leverandøren forbeholder seg retten til å heve eller avslutte avtaleforholdet
+                            dersom det foreligger uriktige eller fullstendige opplysninger
+                        </p>
+                        <label for="newsletter">
+                            <input type="checkbox" id="newsletter" required>
+                            Ja takk! Send nyhetsbrev til meg.
+                        </label>
+                        <label for="sms">
+                            <br><input type="checkbox" id="sms" required>
+                            Jeg ønsker å motta tekstmeldinger med tilbud og nyheter.
+                        </label> 
+                    </article>
+                </section>
             </main>
             <hr id="checkout-hr">
             <footer>
                 <section id="footer-logo">
-                    <h2>Logo</h2>
+                    <a href="index.html"><h2>Logo</h2></a>
                     <p>Lorem Khaled Ipsum is a major key to success. Eliptical talk.</p>
                 </section>
-                <section id="footer-contact">
-                    <article>
-                        <h6>Kontakt</h6>
-                        <p class="contact-icons">
-                            <i class="fa-solid fa-location-dot"></i>
-                            <strong>Adresse:</strong> B R A Veien 4, 1757 Halden
-                        </p>
-                        <p class="contact-icons">
-                            <i class="fa-solid fa-phone"></i>
-                            <strong>Telefon:</strong> 69 60 80 00
-                        </p>
-                        <p class="contact-icons">
-                            <i class="fa-solid fa-envelope"></i>
-                            <strong>E-post:</strong> halden@hiof.no
-                        </p>
-                        <p class="contact-icons">
-                            <i class="fa-solid fa-clock"></i>
-                            <strong>Åpningstider:</strong> Stenger 15:00
-                        </p>
-                    </article>
-                    <aside id="footer-shortcut">
+                <section id="footer-flex-container">
+                    <section id="footer-contact">
+                        <article>
+                            <h6>Kontakt</h6>
+                            <p class="contact-icons">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <strong>Adresse:</strong> B R A Veien 4, 1757 Halden
+                            </p>
+                            <p class="contact-icons">
+                                <i class="fa-solid fa-phone"></i>
+                                <strong>Telefon:</strong> 69 60 80 00
+                            </p>
+                            <p class="contact-icons">
+                                <i class="fa-solid fa-envelope"></i>
+                                <strong>E-post:</strong> halden@hiof.no
+                            </p>
+                            <p class="contact-icons">
+                                <i class="fa-solid fa-clock"></i>
+                                <strong>Åpningstider:</strong> Stenger 15:00
+                            </p>
+                        </article>
+                    </section>
+                    <section id="footer-shortcut">
                         <h6>Snarveier</h6>
+                        <nav>
                             <ul>
                                 <li><a href="#">Produkter</a></li>
                                 <li><a href="#">Kategorier</a></li>
                                 <li><a href="#">Kontakt oss</a></li>
                             </ul>
-                    </aside>
+                        </nav>
+                    </section>
                 </section>
                 <section id="footer-social">
                     <h6>Sosiale Medier</h6>
-                    <ul id="social-icons">
-                        <li><i class="fa-brands fa-instagram"></i></li>
-                        <li><i class="fa-brands fa-facebook"></i></li>
-                        <li><i class="fa-brands fa-linkedin"></i></li>
-                        <li><i class="fa-brands fa-pinterest"></i></li>
-                    </ul>
+                    <nav>
+                        <ul id="social-icons">
+                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-pinterest"></i></a></li>
+                        </ul>
+                    </nav>
                 </section>
             </footer>
         </div>
-</body>
-</html>
+    </body>
+    </html>

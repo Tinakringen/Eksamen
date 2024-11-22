@@ -15,8 +15,8 @@ body{
     flex-direction: row;
     justify-content: space-between;
     width: 60%;
-    padding: 5px;
-    border: 1.5px solid #000;
+    padding: 0.4em;
+    border: 1.3px solid #000;
     border-radius: 25px;
 }
 #søkebar, #knapp{
@@ -38,10 +38,9 @@ body{
     align-items: center;
     text-decoration: none;
     color: #000;
-    padding: 0px;
-    padding-top: 6px;
+    padding: 0;
+    padding-top: 0.4em;
     margin: 0;
-    font-weight: bold;
 }
 #icons, #icons a{
     display: flex;
@@ -85,140 +84,98 @@ body{
     background-image: url("https://picsum.photos/id/38/1200/600");
     background-size: cover;
     border-radius: 2em;
-    padding: 0 5% 0 40%;
+    padding: 0em 0em 0em 13em;
     max-width: 100%;
     height: 40rem;
     margin-top: 1em;
     padding-right: 2em;
+
+    h1{
+        text-align: right;
+        font-size: 2rem;   
+    }
+
+    p{
+        text-align: right;
+        font-size: 1em;
+        padding: 0;
+    } 
+
+    a{
+        border-color: transparent;
+        border-radius: 3em;
+        background: #fff;
+        font-size: 0.9em;
+        margin-top: 0.5em;
+        padding: 1em;
+        font-weight: bold;
+        text-decoration: none;
+        color: #000;
+    }
+
 }
-#banner h1{
-    color: #000;
-    text-align: right;
-    font-size: 2rem;
-    word-break: break-all; 
-}
-#banner p{
-    color: #000;
-    text-align: right;
-    font-size: 1rem;
-    font-weight: 600;
-    padding: 0;
-}   
-#btn1{
-    border-color: transparent;
-    height: 3em;
-    border-radius: 3em;
-    background: #fff;
-    font-size: 0.8em;
-    margin-top: 0.5em;
-}
-#btn1 a{
-    padding: 0.8rem;
-    color: #000;
-    text-decoration: none;
-    font-weight: bold;
-}
-#the-best h2{
+#popular-products{
     text-align: center;
-    padding: 10px;
-    font-size: 2em;
-    font-weight: 700;
+
+    h2{
+        text-align: center;
+        padding: 10px;
+        font-size: 2em;
+        font-weight: 900;
+    }
+
 }
-#the-best{
-    text-align: center;
-}
-#popular{
+#main-buttons{
     display: flex;
-    flex-direction: row;
     justify-content: center;
-    gap: 10px;
-    padding: 0;
-    margin: 0;
-    
-}
-#popular{
-    margin-bottom: 3em;
-    margin-top: 2em;
-}
-#popular #new-prod{
-    background-color: rgb(91, 91, 91);
-    color: #fff;
-}
-#popular a{
-    border: 0.4px solid rgb(156, 156, 156);
-    padding: 15px;
-    border-radius: 50em; 
-    font-size: 0.8em;
-    text-decoration: none;
-    color: #000;
-    font-weight: bold;
-}
-#popular a:hover{
-    background-color: rgb(156, 156, 156);
-    color:rgb(255, 255, 255)
-}
-.image-container img{   
-    width: 100%;
-    border-radius: 2em;
+    gap: 0.5em;
+    margin-top: 2.5em;
+    margin-bottom: 3.5em;
+
+    button{
+        width: 100%;
+        border: 0.4px solid rgb(156, 156, 156);
+        background-color: #fff;
+        padding: 1.4em;
+        border-radius: 50em; 
+        font-size: 0.9em;
+        font-weight: bold;
+        
+    }
+
+    .new-prod{
+        background-color: rgb(60, 60, 60);
+        color: #fff;  
+    } 
+
+    .button-choice:hover{
+        background-color: rgb(118, 118, 118);
+        color:rgb(255, 255, 255)
+    }
 }
 .image-container{
     position: relative;
-    max-width: 350px;
     display: flex;
     flex-direction: column;
-    padding: 0;
     margin: 0;
-    border-radius: 5%;
+    img{   
+        width: 100%;
+        border-radius: 1.5em;
+    }
 }
 .heart-icon{
     position: absolute;
-    top: 10px;
-    right: 15px;
-    font-size: 1.5em;
+    top: 0.6em;
+    right: 0.6em;
+    font-size: 1.3em;
     backdrop-filter: blur(30px);
     color: #fff;
-    border-radius: 50%;
-    padding: 0.6rem;
+    border-radius: 5em;
+    padding: 0.4em;
 }
 .heart-icon:hover{
     background-color: rgba(255, 119, 119, 0.5);
     cursor: pointer;
-}
-.price{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0;
-    margin: 0;
-    font-weight: bold;
-}
-.price p, .price h3{
-    padding: 0;
-}
-.price p{
-    font-weight: 300;
-}
-.stars{
-    display: flex;
-    justify-content: flex-start;
-    align-items: baseline;
-    gap: 5px;
-    margin-top: 0;
-    padding: 0;
-    list-style: none;
-}
-.stars{
-    font-size: 0.8em;
-    font-weight: 700;
-}
-#explore-categories{
-    margin-top: 3.5em;
-    margin-bottom: 3rem;
-    text-align: center;
-}
-#explore-categories p{
-    font-size: 0.9em;
-    margin: 2.5em;
 }
 #product-container{
     display: flex;
@@ -229,41 +186,78 @@ body{
     padding: 0;
     margin-top: 2rem;
 }
+.price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    font-weight: bolder;
+    h3{
+        font-size: 1em;
+    }
+    p{
+        font-weight: bold;
+        font-size: 0.9em;
+    }
+    a{
+        text-decoration: none;
+        color: #000;
+    }
+}
+.stars{
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    gap: 0.3em;
+    padding: 0;
+    list-style: none;
+    font-size: 0.8em;
+    font-weight: 700;
+}
+#explore-categories{
+    margin-top: 3.5em;
+    margin-bottom: 3rem;
+    text-align: center;
+    p{
+        font-size: 0.9em;
+        font-weight: bold;
+        margin: 2.5em;
+    }
+}
+/*Promt: how to center text without using flex?*/
+/*Results: top: 50%, left: 50%, transfrom: translate(-50%, -50%);*/
 .categories{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    h4{
+        position: absolute;
+        color: #fff;
+        margin: 0;
+        padding: 0;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
 }
 .category-box{
     position: relative;
     width: 100%;
     text-align: center;
-    margin: 5px;
+    margin: 0.3em;
 }
 .category-box img{
     width: 100%;
-    filter: opacity(67%) brightness(86%);
-    border-radius: 2em;
-}
-/*Promt: how to center text without using flex?*/
-/*Results: top: 50%, left: 50%, transfrom: translate(-50%, -50%);*/
-.categories h4{
-    position: absolute;
-    color: #fff;
-    margin: 0;
-    padding: 0;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-.categories img{
+    filter: opacity(67%) brightness(60%);
+    border-radius: 1em;
     height: 17em;
-    overflow: hidden;
+    object-fit: cover;
 }
 #category3{
     height: 30em;
-    border-radius: 1.5em;
+    border-radius: 1em;
     width: 100%;
 }
 #review{
@@ -311,49 +305,65 @@ body{
     color:rgb(236, 236, 236);
     border: 1.5px solid rgb(236, 236, 236);
 }
-footer h6{
+
+/* FOOTER */
+
+footer{
+    h6{
     font-size: 1.5em;
     font-weight: 200;
+    }
+}
+#footer-flex-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 #footer-logo{
     padding-top: 0;
     padding-bottom: 2em;
-}
-#footer-logo h2{
+    h2{
     padding-top: 2em;
     padding-bottom: 0;
     margin: 0;
-}
-.contact-icons i{
-    margin-right: 0.5rem;
-}
-#footer-contact{
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-}
-#footer-contact h6{
-    margin: 0;
-    padding-right: 0;
-    padding-bottom: 0.5em;
-}
-#footer-contact p, #footer-contact li{
-    font-size: 15px;
-}
-#footer-shortcut h6{
-    padding-bottom: 0.5em;
-}
-#footer-shortcut ul{
-    list-style: none;
-    padding: 0;
-}
-#footer-shortcut li{
-    margin-bottom: 15px;
-}
-#footer-shortcut a{
+    }
+    a{
     text-decoration: none;
     color: #000;
+    }
 }
+#footer-contact{
+    h6{
+    margin: 0;
+    }
+    p, li{
+    font-size: 0.9em;
+    }
+}
+.contact-icons i{
+    margin-right: 0.5em;
+}
+#footer-shortcut{
+    margin: 0;
+    h6{
+    margin: 0;
+    padding-bottom: 0.6em;
+    }
+    ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: right;
+    }
+    li{
+        margin-bottom: 15px;
+    }
+    a{
+        text-decoration: none;
+        color: #000;
+        font-size: 0.9em;
+    }  
+} 
 #footer-social h6{
     padding-top: 1em;
     padding-bottom: 1em;
@@ -369,6 +379,9 @@ footer h6{
     margin-top: 0;
     margin-bottom: 3em;
     list-style: none;
+    a{
+        color: #000;
+    }
 }
 
 
@@ -384,61 +397,71 @@ footer h6{
 #back-to-main i{
     padding-right: 0.6em;
 }
-#main-checkout h1{
-    text-align: center;
-    padding-bottom: 0.9em;
+#main-checkout{
+    h1{
+        text-align: center;
+        padding-bottom: 1em;
+        margin-top: 1em;
+    }
+    h2{
+        font-size: 1.5em;
+        margin-top: 2em;
+        margin-left: 1em;
+        margin-bottom: 1.5em;
+    }
 }
-.checkout-container{
-    border: 2px solid rgb(228, 228, 228);
-}
-.checkout-section img{
-    margin-left: 2.5em;
-    margin-bottom: 2em;
-    max-width: 200px;
-}
-#main-checkout h2{
-    font-size: 1.9em;
-    margin-top: 2em;
-    margin-left: 1em;
-    margin-bottom: 1.5em;
+#checkout-section{
+    border: 2px solid rgb(228, 228, 228); 
+    img{
+        margin-left: 2.5em;
+        margin-bottom: 2em;
+        max-width: 200px;
+    }
 }
 .checkout-card{
-    margin-left: 4em;
-}
-.checkout-card h3{
-    padding: 0;
-    font-size: 1rem;
-}
-.checkout-card p{
-    margin: 0;
-}
-.checkout-card select{
-    border: 1.5px solid rgb(228, 228, 228);
-    padding: 1em;
-    background-color: rgb(228, 228, 228);
-}
-.checkout-card input{
+    img{
+        margin-left: 2.5em;
+        margin-bottom: 2em;
+        max-width: 50%;
+    }
+    h3{
+        padding: 0;
+        font-size: 1rem;
+    }
+    p{
+        margin: 0;
+    }
+    select{
+        border: 1.5px solid rgb(228, 228, 228);
+        padding: 1em;
+        background-color: rgb(228, 228, 228);
+    }
+    input{
     padding: 1em;
     border: 1.5px solid rgb(228, 228, 228);
     width: 54%;
     height: 47px; 
+    }
+}
+.checkout-product-info{
+    margin-left: 3em;
 }
 .options{
     display: inline-block;
     gap: 1em;
     padding-top: 2em;
 }
-.shop-icons{
-    margin-top: 3.5em;
-    margin-left: 0;
-    margin-bottom: 3em;
-}
 /*PROMT: Why can't I make a gap between the icons in #shop-icons?*/
 /*RESULTS: You need flex to use gap,
 but without flex you can use margin to create space between the icons. 
 Example: margin-right: 20px; */
-.shop-icons i{
-    margin-right: 0.7em;
+.shop-icons{
+    margin-top: 3em;
+    margin-bottom: 3em;
+    margin-left: 0;
+    i{
+        margin-right: 0.7em;
+    }
 }
 #checkout-container2{
     display: flex;
@@ -446,32 +469,40 @@ Example: margin-right: 20px; */
     justify-content: center;
     border: 2px solid rgb(228, 228, 228);
     margin-top: 1.4em;
+    h3{
+        margin-left: 2em;
+        margin-bottom: 0;
+        font-size: 1em;
+    }
+    label{
+        font-weight: 550;
+        font-size: 0.8em;
+        align-self: first baseline;
+    }
+    input{
+        padding: 1.3em;
+        border: 1.5px solid rgb(228, 228, 228); 
+        width: 100%;
+        margin-bottom: 1em;
+    }
+    form{
+        padding: 0.5em;
+        margin: 0em 1.5em 2em 1.5em;
+    }
+    button:hover{
+        cursor: pointer;
+    }
 }
-#checkout-container2 h3{
-    margin-left: 1.6em;
-    margin-bottom: 0;
-}
-#checkout-container2 label{
-    font-weight: 550;
-    font-size: 15px;
-    align-self: first baseline;
-}
-#checkout-container2 input{
-    padding: 1.3em;
-    border: 1.5px solid rgb(228, 228, 228); 
-    width: 100%;
-}
-#checkout-container2 form{
-    padding: 0.5em;
-    margin: 0em 1.5em 2em 1.5em;
-}
-#save-button{
-    margin-top: 4em;
+.save-button{
+    margin-top: 1.5em;
     background-color: rgb(97, 97, 97);
     color: #fff;
     width: 100%;
     padding: 1.5em;
     border: none;
+}
+.save-button:hover{
+    cursor: pointer;
 }
 #cancel-button{
     text-decoration: underline;
@@ -501,13 +532,13 @@ Example: margin-right: 20px; */
         font-weight: 600;
     }
 }
-
 .delivery-card{
     border: 2px solid rgb(228, 228, 228);
     padding: 1em;
     margin: 2em;
 }
 #checkout-container4{
+    padding-bottom: 2em;
     border: 2px solid rgb(228, 228, 228);
     margin-top: 2em;
     h3{
@@ -536,22 +567,19 @@ Example: margin-right: 20px; */
 #purchase{
     text-align: center;
     margin: 2em;
-    .save{
-        width: 100%;
-        padding: 1.5em;
-        margin-bottom: 2em;
-        margin-top: 0;
-        border-color: transparent;
-    }
     input{
         margin-bottom: 1em;
     }
-    #kr{
-        font-size: 2em;
+    #price-kr{
+        font-size: 1.8em;
         font-weight: 800;
         margin-bottom: 0;
         margin-top: 0;
     }
+}
+#correct-info{
+    margin-bottom: 2em;
+    margin-top: 2em;
 }
 #checkout-hr{
     margin-top: 3em;
@@ -572,10 +600,15 @@ Example: margin-right: 20px; */
     a{
         text-decoration: none;
         color: #000;
-        padding: 10px;
+        padding: 0.4em;
+        font-size: 0.9em;
     }
     li{
         list-style: none;
+    }
+    i{
+        font-size: 0.9em;
+        margin: 0 0.8em;
     }
 }
 /*Promt: How can I semantically make space between a word and < sign?*/
@@ -583,11 +616,6 @@ Example: margin-right: 20px; */
 Example: .breadcrumb-item + .breadcrumb-item::before{
 content: ">";
 margin: 0 10px;*/
-
-.list-product + .list-product::before{
-    content: ">";
-    padding: 2px;
-}
 #product{
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -622,13 +650,11 @@ margin: 0 10px;*/
 }
 #product-info{
     h1{
-        margin-bottom: 0;
+        margin-bottom: 0.7em;
     }
-    h2{
-        margin-top: 0.5em;
-        font-weight: 10;
-        color: rgb(128, 128, 128);
-        text-decoration: underline;
+    a{
+        font-size: 1.5em;
+        color: rgb(161, 161, 161);
     }
 }
 #choose-size{
@@ -756,7 +782,6 @@ margin: 0 10px;*/
         font-size: 1.5em;
     }
     a{
-        margin-bottom: 2em;
         text-decoration: none;
     }
     figure{
