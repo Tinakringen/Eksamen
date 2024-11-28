@@ -11,7 +11,17 @@
         <title>Eksamensoppgave</title>
     </head>
     <body>
-        <div id="product-grid-container">
+        <nav class="skip">
+            <ul>
+                <li><a href="#søk">Hopp til søk</a></li>
+                <li><a href="index.html">Hopp til forside</a></li>
+                <li><a href="#products-nav">Hopp til navigasjonssti</a></li>
+                <li><a href="#product-info">Hopp til produktinformasjon</a></li>
+                <li><a href="#similar-products">Hopp til lignende produkter</a></li>
+                <li><a href="#footer-contact">Hopp til kontaktinformasjon</a></li>
+            </ul>
+        </nav>
+        <div id="grid-container">
             <header>
                 <nav id="nav-search">
                     <form id="søk">
@@ -36,6 +46,9 @@
                     </ul>
                 </nav>
             </header>
+            <span>
+                <a id="top-btn" href="#nav-search"><i class="fa-solid fa-arrow-up"></i></a>
+            </span>
             <main>
                 <section id="products-nav">
                     <nav>
@@ -47,215 +60,219 @@
                             <li class="list-product"><a href="#"><strong>Produktnavn</strong></a></li>
                         </ul>
                     </nav>
-                </section>   
-                <article id="product">
-                    <img id="img1" src="https://picsum.photos/id/96/400/400" alt="White heels">
-                    <img id="img2" src="https://picsum.photos/id/96/400/400" alt="White heels">
-                    <img id="img3" src="https://picsum.photos/id/96/400/400" alt="White heels">
-                    <img id="img4" src="https://picsum.photos/id/96/400/400" alt="White heels">
-                </article>
-                <section id="product-info">
-                    <h1>Produktnavn</h1>
-                    <a href="#">Merkenavn</a>
-                    <p>799 kr inkl. mva.</p>
-                    <p>Farge: <strong>svart</strong></p>
-                    <label id="choose-size" for="size">
-                        <select name="size" id="size" required>
-                            <option value="">Velg størrelse</option>
-                            <option value="XS">XS</option>
-                            <option value="S">S</option>
-                            <option value="M">M</option>
-                            <option value="L">L</option>
-                            <option value="XL">XL</option>
-                        </select>
-                    </label>
-                    <figure id="add-to-cart">
-                        <button id="cartbtn" class="addcart">Legg i handlekurv</button>
-                        <button id="favorite" type="button"><i class="fa-regular fa-heart"></i></button>
-                    </figure>
                 </section>
-                <hr class="product-hr">
-                <section id="product-description">
-                    <details class="dropmeny">
-                        <summary>Materiale og vedlikehold</summary>
-                        <ul id="materials">
-                            <li>Overmateriale: 95% viskose, 5% elastan</li>
-                            <li>Materiale ermer: 100% polyester</li>
-                            <li>Materiale: jersey</li>
-                        </ul>
-                    </details>
-                </section>
-                <hr class="product-hr">
-                <section id="product-details">
-                    <details class="dropmeny">
-                        <summary>Produktdetaljer</summary>
-                        <p>
-                            You should never complain, complaining is a weak emotion, 
-                            you got life, we breathing, we blessed.<br> The weather is amazing, 
-                            walk with me through the pathway of more success. 
-                        </p>
-                    </details>
-                </section>
-                <hr class="product-hr">
-                <section id="product-sizes">
-                    <details class="dropmeny">
-                        <summary>Størrelsestabell</summary>
-                        <p>
-                            Sjekk hvordan din vanlige størrelse konverterer til andre strørrelser i vår størrelsesguide.
-                            Husk at dette kun er en generell guide og at størrelsene kan variere i forhold til merke og modell.
-                        </p>
-                    <table id="table">
-                        <thead>
-                            <tr>
-                                <th>EU</th>
-                                <th>INT</th>
-                                <th>BRYSTVIDDE</th>
-                                <th>LIVVIDDE</th>
-                                <th>HOFTEMÅL</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>32</td>
-                                <td>XXS</td>
-                                <td>76</td>
-                                <td>63</td>
-                                <td>85</td>
-                            </tr>
-                            <tr>
-                                <td>34</td>
-                                <td>XS</td>
-                                <td>80</td>
-                                <td>66</td>
-                                <td>89</td>
-                            </tr>
-                            <tr>
-                                <td>36</td>
-                                <td>S</td>
-                                <td>84</td>
-                                <td>69</td>
-                                <td>93</td>
-                            </tr>
-                            <tr>
-                                <td>38</td>
-                                <td>M</td>
-                                <td>88</td>
-                                <td>72</td>
-                                <td>97</td>
-                            </tr>
-                            <tr>
-                                <td>40</td>
-                                <td>L</td>
-                                <td>92</td>
-                                <td>76</td>
-                                <td>100</td>
-                            </tr>
-                            <tr>
-                                <td>42</td>
-                                <td>XL</td>
-                                <td>96</td>
-                                <td>80</td>
-                                <td>103</td>
-                            </tr>
-                            <tr>
-                                <td>44</td>
-                                <td>XXL</td>
-                                <td>100</td>
-                                <td>85</td>
-                                <td>106</td>
-                            </tr>
-                            <tr>
-                                <td>46</td>
-                                <td>3XL</td>
-                                <td>104</td>
-                                <td>90</td>
-                                <td>109</td>
-                            </tr>
-                            <tr>
-                                <td>48</td>
-                                <td>4XL</td>
-                                <td>110</td>
-                                <td>96.5</td>
-                                <td>114</td>
-                            </tr>
-                            <tr>
-                                <td>50</td>
-                                <td>5XL</td>
-                                <td>116</td>
-                                <td>103</td>
-                                <td>119</td>
-                            </tr>
-                            <tr>
-                                <td>52</td>
-                                <td>6XL</td>
-                                <td>122</td>
-                                <td>109.5</td>
-                                <td>124</td>
-                            </tr>
-                            <tr>
-                                <td>54</td>
-                                <td>7XL</td>
-                                <td>128</td>
-                                <td>116</td>
-                                <td>130</td>
-                            </tr>
-                            <tr>
-                                <td>56</td>
-                                <td>8XL</td>
-                                <td>134</td>
-                                <td>122.5</td>
-                                <td>136</td>
-                            </tr>
-                            <tr>
-                                <td>58</td>
-                                <td>9XL</td>
-                                <td>140</td>
-                                <td>129</td>
-                                <td>142</td>
-                            </tr>
-                            <tr>
-                                <td>60</td>
-                                <td>10XL</td>
-                                <td>146</td>
-                                <td>135.5</td>
-                                <td>148</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    </details>
-                </section>
-                <hr class="product-hr"> 
-                <section id="product-reviews">
-                    <details id="dropmeny-review">
-                        <summary>
-                            <h4>Anmeldelser</h4>
-                            <!-- Promt: how can i add icons to the opposite side of the summary? -->
-                            <!--Results: -->
-                            <span class="prod-stars">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                                <span id="count">32</span>
-                            </span>
-                        </summary>
-                        <article id="bjorn-review">
-                            <h5>Jørn Bjørn</h5>
-                            <p>2024-10-02</p>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <p>
-                                Egg whites, turkey sausage, wheat toast, water. 
-                                Of course they don’t want us to eat our breakfast, so we are going to enjoy our breakfast. 
-                                Bless up.
-                            </p>
-                        </article>   
-                    </details>
-                </section>
+                <div id="product-grid-container"> 
+                    <article id="product">
+                        <img id="img1" src="https://picsum.photos/id/96/400/400" alt="White heels">
+                        <img id="img2" src="https://picsum.photos/id/96/400/400" alt="White heels">
+                        <img id="img3" src="https://picsum.photos/id/96/400/400" alt="White heels">
+                        <img id="img4" src="https://picsum.photos/id/96/400/400" alt="White heels">
+                    </article>
+                    <section id="product-drop-meny">
+                        <section id="product-info">
+                            <h1>Produktnavn</h1>
+                            <a href="#">Merkenavn</a>
+                            <p>799 kr inkl. mva.</p>
+                            <p>Farge: <strong>svart</strong></p>
+                            <label id="choose-size" for="size">
+                                <select name="size" id="size" required>
+                                    <option value="">Velg størrelse</option>
+                                    <option value="XS">XS</option>
+                                    <option value="S">S</option>
+                                    <option value="M">M</option>
+                                    <option value="L">L</option>
+                                    <option value="XL">XL</option>
+                                </select>
+                            </label>
+                            <figure id="add-to-cart">
+                                <button id="cartbtn" class="addcart">Legg i handlekurv</button>
+                                <button id="favorite" type="button"><i class="fa-regular fa-heart"></i></button>
+                            </figure>
+                        </section>
+                        <section id="product-description">
+                            <hr class="product-hr">
+                            <details class="dropmeny">
+                                <summary>Materiale og vedlikehold</summary>
+                                <ul id="materials">
+                                    <li>Overmateriale: 95% viskose, 5% elastan</li>
+                                    <li>Materiale ermer: 100% polyester</li>
+                                    <li>Materiale: jersey</li>
+                                </ul>
+                            </details>
+                        </section>
+                        <section id="product-details">
+                            <hr class="product-hr">
+                            <details class="dropmeny">
+                                <summary>Produktdetaljer</summary>
+                                <p>
+                                    You should never complain, complaining is a weak emotion, 
+                                    you got life, we breathing, we blessed.<br> The weather is amazing, 
+                                    walk with me through the pathway of more success. 
+                                </p>
+                            </details>
+                        </section>
+                        <section id="product-sizes">
+                            <hr class="product-hr">
+                            <details class="dropmeny">
+                                <summary>Størrelsestabell</summary>
+                                <p>
+                                    Sjekk hvordan din vanlige størrelse konverterer til andre strørrelser i vår størrelsesguide.
+                                    Husk at dette kun er en generell guide og at størrelsene kan variere i forhold til merke og modell.
+                                </p>
+                            <table id="table">
+                                <thead>
+                                    <tr>
+                                        <th>EU</th>
+                                        <th>INT</th>
+                                        <th>BRYSTVIDDE</th>
+                                        <th>LIVVIDDE</th>
+                                        <th>HOFTEMÅL</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>32</td>
+                                        <td>XXS</td>
+                                        <td>76</td>
+                                        <td>63</td>
+                                        <td>85</td>
+                                    </tr>
+                                    <tr>
+                                        <td>34</td>
+                                        <td>XS</td>
+                                        <td>80</td>
+                                        <td>66</td>
+                                        <td>89</td>
+                                    </tr>
+                                    <tr>
+                                        <td>36</td>
+                                        <td>S</td>
+                                        <td>84</td>
+                                        <td>69</td>
+                                        <td>93</td>
+                                    </tr>
+                                    <tr>
+                                        <td>38</td>
+                                        <td>M</td>
+                                        <td>88</td>
+                                        <td>72</td>
+                                        <td>97</td>
+                                    </tr>
+                                    <tr>
+                                        <td>40</td>
+                                        <td>L</td>
+                                        <td>92</td>
+                                        <td>76</td>
+                                        <td>100</td>
+                                    </tr>
+                                    <tr>
+                                        <td>42</td>
+                                        <td>XL</td>
+                                        <td>96</td>
+                                        <td>80</td>
+                                        <td>103</td>
+                                    </tr>
+                                    <tr>
+                                        <td>44</td>
+                                        <td>XXL</td>
+                                        <td>100</td>
+                                        <td>85</td>
+                                        <td>106</td>
+                                    </tr>
+                                    <tr>
+                                        <td>46</td>
+                                        <td>3XL</td>
+                                        <td>104</td>
+                                        <td>90</td>
+                                        <td>109</td>
+                                    </tr>
+                                    <tr>
+                                        <td>48</td>
+                                        <td>4XL</td>
+                                        <td>110</td>
+                                        <td>96.5</td>
+                                        <td>114</td>
+                                    </tr>
+                                    <tr>
+                                        <td>50</td>
+                                        <td>5XL</td>
+                                        <td>116</td>
+                                        <td>103</td>
+                                        <td>119</td>
+                                    </tr>
+                                    <tr>
+                                        <td>52</td>
+                                        <td>6XL</td>
+                                        <td>122</td>
+                                        <td>109.5</td>
+                                        <td>124</td>
+                                    </tr>
+                                    <tr>
+                                        <td>54</td>
+                                        <td>7XL</td>
+                                        <td>128</td>
+                                        <td>116</td>
+                                        <td>130</td>
+                                    </tr>
+                                    <tr>
+                                        <td>56</td>
+                                        <td>8XL</td>
+                                        <td>134</td>
+                                        <td>122.5</td>
+                                        <td>136</td>
+                                    </tr>
+                                    <tr>
+                                        <td>58</td>
+                                        <td>9XL</td>
+                                        <td>140</td>
+                                        <td>129</td>
+                                        <td>142</td>
+                                    </tr>
+                                    <tr>
+                                        <td>60</td>
+                                        <td>10XL</td>
+                                        <td>146</td>
+                                        <td>135.5</td>
+                                        <td>148</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            </details>
+                        </section>
+                        <section id="product-reviews">
+                            <hr class="product-hr"> 
+                            <details id="dropmeny-review">
+                                <summary>
+                                    <h4>Anmeldelser</h4>
+                                    <!-- Promt: how can i add icons to the opposite side of the summary? -->
+                                    <!--Results: -->
+                                    <span class="prod-stars">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <span id="count">32</span>
+                                    </span>
+                                </summary>
+                                <article id="bjorn-review">
+                                    <h5>Jørn Bjørn</h5>
+                                    <p>2024-10-02</p>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <p>
+                                        Egg whites, turkey sausage, wheat toast, water. 
+                                        Of course they don’t want us to eat our breakfast, so we are going to enjoy our breakfast. 
+                                        Bless up.
+                                    </p>
+                                </article>   
+                            </details>
+                        </section>
+                    </section>
+                </div>
                 <section id="similar-products">
                     <h5>Lignende produkter</h5>
                     <a href="#">
