@@ -11,13 +11,33 @@
         <title>Eksamensoppgave</title>
     </head>
     <body itemscope itemtype="https://schema.org/WebPage">
-        <nav class="skip">
+        <nav class="skip" itemscope itemtype="https://schema.org/BreadcrumbList">
             <ul>
-                <li><a href="#søk">Hopp til søk</a></li>
-                <li><a href="#popular-products">Hopp til produkter</a></li>
-                <li><a href="#explore-categories">Hopp til kategorier</a></li>
-                <li><a href="#review">Hopp til anmeldelser</a></li>
-                <li><a href="#footer-contact">Hopp til kontaktinformasjon</a></li>
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <a href="#søk" itemprop="item">Hopp til søk</a>
+                    <meta itemprop="position" content="1">
+                    <meta itemprop="name" content="Hopp til søk">
+                </li>
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <a href="#popular-products" itemprop="item">Hopp til produkter</a>
+                    <meta itemprop="position" content="2">
+                    <meta itemprop="name" content="Hopp til produkter">
+                </li>
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <a href="#explore-categories" itemprop="item">Hopp til kategorier</a>
+                    <meta itemprop="position" content="3">
+                    <meta itemprop="name" content="Hopp til kategorier">
+                </li>
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <a href="#review" itemprop="item">Hopp til anmeldelser</a>
+                    <meta itemprop="position" content="4">
+                    <meta itemprop="name" content="Hopp til anmeldelser">
+                </li>
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <a href="#footer-contact" itemprop="item">Hopp til kontaktinformasjon</a>
+                    <meta itemprop="position" content="5">
+                    <meta itemprop="name" content="Hopp til kontaktinformasjon">
+                </li>
             </ul>
         </nav>
         <div id="grid-container">
