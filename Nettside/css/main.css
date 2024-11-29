@@ -455,12 +455,10 @@ body{
             color: #000;
         }
     }
-    
     .heart-icon:hover{
         background-color: rgba(255, 119, 119, 0.5);
         cursor: pointer;
     }
-
     #popular-products{
         text-align: center;
         margin-top: 5em;
@@ -797,9 +795,6 @@ Example: margin-right: 20px; */
         padding: 0.5em;
         margin: 0em 1.5em 2em 1.5em;
     }
-    button:hover{
-        cursor: pointer;
-    }
 }
 .save-button{
     margin-top: 1.5em;
@@ -808,9 +803,6 @@ Example: margin-right: 20px; */
     width: 100%;
     padding: 1.5em;
     border: none;
-}
-.save-button:hover{
-    cursor: pointer;
 }
 #cancel-button{
     text-decoration: underline;
@@ -858,6 +850,12 @@ Example: margin-right: 20px; */
                 font-weight: bold;
                 margin-top: 0.5em;
             }
+        }
+        button:hover{
+            cursor: pointer;
+        }
+        .save-button:hover{
+            cursor: pointer;
         }
 }
 #checkout-container3{

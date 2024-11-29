@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nb">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="ikoner/css/solid.css">
         <link rel="stylesheet" href="ikoner/css/fontawesome.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet" href="ikoner/css/regular.css">
         <link rel="stylesheet" href="ikoner/css/brands.css">
         <link rel="stylesheet" href="css/main.css">
         <title>Eksamensoppgave</title>
     </head>
-    <body>
+    <body itemscope itemtype="https://schema.org/WebPage">
         <nav class="skip">
             <ul>
                 <li><a href="#søk">Hopp til søk</a></li>
@@ -25,28 +25,28 @@
                 <nav id="nav-search">
                     <form id="søk">
                         <input id="søkebar" type="search" placeholder="Søk her" title="Search">
-                        <button id="knapp" type="submit" title="Søk etter"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        <button id="knapp" type="submit" title="Søk etter" aria-label="søkeknapp"><i class="fa-solid fa-magnifying-glass"></i></button>
                     </form>
                 </nav>
                 <nav class="main-nav">
                     <ul>
-                        <li><a href="index.html">Hjem</a></li>
-                        <li><a href="#popular-products">Produkter</a></li>
-                        <li><a href="index.html" id="logo">Logo</a></li>
-                        <li><a href="#explore-categories">Kategorier</a></li>
-                        <li><a href="#footer-contact">Kontakt oss</a></li>
+                        <li><a href="index.html" aria-label="Lenke til hjemmeside">Hjem</a></li>
+                        <li><a href="#popular-products" aria-label="Lenke til produkter">Produkter</a></li>
+                        <li><a href="index.html" id="logo" aria-label="Logo som sender deg til forside">Logo</a></li>
+                        <li><a href="#explore-categories" aria-label="lenke til kategorier">Kategorier</a></li>
+                        <li><a href="#footer-contact" aria-label="lenke til kontaktinformasjon">Kontakt oss</a></li>
                     </ul>
                 </nav>
                 <nav>
                     <ul id="icons">
-                        <li><a href="#"><i class="fa-regular fa-user"></i></a></li>
-                        <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
-                        <li><a href="checkout.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                        <li><a href="#" aria-label="lenke til brukerprofil"><i class="fa-regular fa-user"></i></a></li>
+                        <li><a href="#" aria-label="lenke til favorittmappe"><i class="fa-regular fa-heart"></i></a></li>
+                        <li><a href="checkout.html" aria-label="Lenke til shoppingbag"><i class="fa-solid fa-cart-shopping"></i></a></li>
                     </ul>
                 </nav>
             </header>
             <span>
-                <a id="top-btn" href="#nav-search"><i class="fa-solid fa-arrow-up"></i></a>
+                <a id="top-btn" href="#nav-search" aria-label="Knapp som sender deg til toppen av siden"><i class="fa-solid fa-arrow-up"></i></a>
             </span>
             <main>
                 <section id="banner">
@@ -54,191 +54,203 @@
                         <i class="fa-solid fa-arrow-left" id="arrow-left"></i>
                         <i class="fa-solid fa-arrow-right" id="arrow-right"></i>
                         <article id="slider-frame">
-                            <h1>Lorem Khaled Ipsum is a major key to success</h1>
-                            <p>You smart, you loyal, you a genius. Lion! The ladies always say Khaled you smell good, I use no cologne. Cocoa butter is the key</p>
-                            <a href="#">Les mer</a>
+                            <h1 lang="en">Lorem Khaled Ipsum is a major key to success</h1>
+                            <p lang="en">You smart, you loyal, you a genius. Lion! The ladies always say Khaled you smell good, I use no cologne. Cocoa butter is the key</p>
+                            <a href="#" aria-label="Lenke til mer informasjon">Les mer</a>
                         </article>
                         <article id="slider-frame2">
-                            <h2>Lorem Khaled Ipsum is a major key to success.</h2>
-                            <p>You smart, you loyal, you a genius. Lion! The ladies always say Khaled you smell good, I use no cologne. Cocoa butter is the key</p>
-                            <a href="#">Les mer</a>
+                            <h2 lang="en">Lorem Khaled Ipsum is a major key to success.</h2>
+                            <p lang="en">You smart, you loyal, you a genius. Lion! The ladies always say Khaled you smell good, I use no cologne. Cocoa butter is the key</p>
+                            <a href="#" aria-label="Lenke til mer informasjon">Les mer</a>
                         </article>
                         <article id="slider-frame3">
-                            <h2>Lorem Khaled Ipsum is a major key to success.</h2>
-                            <p>You smart, you loyal, you a genius. Lion! The ladies always say Khaled you smell good, I use no cologne. Cocoa butter is the key</p>
-                            <a href="#">Les mer</a>
+                            <h2 lang="en">Lorem Khaled Ipsum is a major key to success.</h2>
+                            <p lang="en">You smart, you loyal, you a genius. Lion! The ladies always say Khaled you smell good, I use no cologne. Cocoa butter is the key</p>
+                            <a href="#" aria-label="Lenke til mer informasjon">Les mer</a>
                         </article>
                     </div>
                 </section>
-                <section id="popular-products" itemscope itemtype="https://schema.org/ItemList">
+                <section id="popular-products">
                     <h2>Våre mest populære produkter</h2>
                     <p>Oppdag det beste av det beste</p>
                     <article id="main-buttons">
-                        <button class="new-prod" type="button">New product</button>
-                        <button class="button-choice" type="button">Special prize</button>
-                        <button class="button-choice" type="button">Best sellers</button>
+                        <button class="new-prod" type="button" aria-label="nye produkter" lang="en">New product</button>
+                        <button class="button-choice" type="button" aria-label="gode tilbud" lang="en">Special prize</button>
+                        <button class="button-choice" type="button" aria-label="bestselgere" lang="en">Best sellers</button>
                     </article>
                     <article id="product-container">
                         <figure class="image-container" itemscope itemtype="https://schema.org/Product">
-                            <a href="product.html" itemprop="url">
+                            <a href="product.html" itemprop="url" aria-label="lenke til selve produktet">
                                 <img src="https://picsum.photos/400/400" alt="produkt bilde" itemprop="image">
                             </a>
+                            <meta itemprop="name" content="Product name">
                             <i class="fa-regular fa-heart heart-icon"></i>
                             <figcaption>
                                 <aside class="price" itemscope itemtype="https://schema.org/Offer">
-                                    <a href="product.html" itemprop="url">
-                                        <h3 itemprop="name">Product name</h3>
+                                    <meta itemprop="priceCurrency" content="NOK">
+                                    <a href="product.html" itemprop="url" aria-label="lenke til selve produktet">
+                                        <h3 itemprop="name" lang="en">Product name</h3>
                                     </a>
-                                    <p>
-                                        <span itemprop="price">1999</span>
-                                        <span itemprop="priceCurrency" content="NOK">Kr</span>
-                                    </p>
+                                    <p itemprop="price">1999 Kr</p>
                                 </aside>
-                                <ul class="stars" itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
+                                <section itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
                                     <meta itemprop="ratingValue" content="4.5">
+                                    <meta itemprop="bestRating" content="5">
                                     <meta itemprop="reviewCount" content="842">
-                                    <li><i class="fa-solid fa-star"></i></li>
-                                    <li><i class="fa-solid fa-star"></i></li>
-                                    <li><i class="fa-solid fa-star"></i></li>
-                                    <li><i class="fa-solid fa-star"></i></li>
-                                    <li><i class="fa-regular fa-star"></i></li>
-                                    <li class="stars">842 reviews</li>
-                                </ul>
+                                    <ul class="stars">                                 
+                                        <li><i class="fa-solid fa-star"></i></li>
+                                        <li><i class="fa-solid fa-star"></i></li>
+                                        <li><i class="fa-solid fa-star"></i></li>
+                                        <li><i class="fa-solid fa-star"></i></li>
+                                        <li><i class="fa-regular fa-star"></i></li>
+                                        <li class="stars" lang="en">842 reviews</li>
+                                    </ul>
+                                </section>
                             </figcaption>
                         </figure>
                         <figure class="image-container" itemscope itemtype="https://schema.org/Product">
-                            <a href="product.html" itemprop="url">
+                            <a href="product.html" itemprop="url" aria-label="lenke til selve produktet">
                                 <img src="https://picsum.photos/400/400" alt="produkt bilde" itemprop="image">
                             </a>
+                            <meta itemprop="name" content="Product name">
                             <i class="fa-regular fa-heart heart-icon"></i>
                             <figcaption>
                                 <aside class="price" itemscope itemtype="https://schema.org/Offer">
-                                    <a href="product.html" itemprop="url">
-                                        <h3 itemprop="name">Product name</h3>
+                                    <meta itemprop="priceCurrency" content="NOK">
+                                    <a href="product.html" itemprop="url" aria-label="lenke til selve produktet">
+                                        <h3 itemprop="name" lang="en">Product name</h3>
                                     </a>
-                                    <p>
-                                        <span itemprop="price">1999</span>
-                                        <span itemprop="priceCurrency" content="NOK">Kr</span>
-                                    </p>
+                                    <p itemprop="price">1999</p>
                                 </aside>
-                                <ul class="stars" itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
+                                <section itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
                                     <meta itemprop="ratingValue" content="4.5">
+                                    <meta itemprop="bestRating" content="5">
                                     <meta itemprop="reviewCount" content="842">
-                                    <li><i class="fa-solid fa-star"></i></li>
-                                    <li><i class="fa-solid fa-star"></i></li>
-                                    <li><i class="fa-solid fa-star"></i></li>
-                                    <li><i class="fa-solid fa-star"></i></li>
-                                    <li><i class="fa-regular fa-star"></i></li>
-                                    <li class="stars">842 reviews</li>
-                                </ul>
+                                    <ul class="stars">
+                                        <li><i class="fa-solid fa-star"></i></li>
+                                        <li><i class="fa-solid fa-star"></i></li>
+                                        <li><i class="fa-solid fa-star"></i></li>
+                                        <li><i class="fa-solid fa-star"></i></li>
+                                        <li><i class="fa-regular fa-star"></i></li>
+                                        <li class="stars" lang="en">842 reviews</li>
+                                    </ul>
+                                </section>
                             </figcaption>
                         </figure>
                         <figure class="image-container" itemscope itemtype="https://schema.org/Product">
-                            <a href="product.html" itemprop="url">
+                            <a href="product.html" itemprop="url" aria-label="lenke til selve produktet">
                                 <img src="https://picsum.photos/400/400" alt="produkt bilde" itemprop="image">
                             </a>
+                            <meta itemprop="name" content="Product name">
                             <i class="fa-regular fa-heart heart-icon"></i>
                             <figcaption>
                                 <aside class="price" itemscope itemtype="https://schema.org/Offer">
-                                    <a href="product.html" itemprop="url">
-                                        <h3 itemprop="name">Product name</h3>
+                                    <meta itemprop="priceCurrency" content="NOK">
+                                    <a href="product.html" itemprop="url" aria-label="lenke til selve produktet">
+                                        <h3 itemprop="name" lang="en">Product name</h3>
                                     </a>
-                                    <p>
-                                        <span itemprop="price">1999</span>
-                                        <span itemprop="priceCurrency" content="NOK">Kr</span>
-                                    </p>
+                                    <p itemprop="price">1999</p>
                                 </aside>
-                                <ul class="stars" itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
+                                <section itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
                                     <meta itemprop="ratingValue" content="4.5">
+                                    <meta itemprop="bestRating" content="5">
                                     <meta itemprop="reviewCount" content="842">
-                                    <li><i class="fa-solid fa-star"></i></li>
-                                    <li><i class="fa-solid fa-star"></i></li>
-                                    <li><i class="fa-solid fa-star"></i></li>
-                                    <li><i class="fa-solid fa-star"></i></li>
-                                    <li><i class="fa-regular fa-star"></i></li>
-                                    <li class="stars">842 reviews</li>
-                                </ul>
+                                    <ul class="stars">
+                                        <li><i class="fa-solid fa-star"></i></li>
+                                        <li><i class="fa-solid fa-star"></i></li>
+                                        <li><i class="fa-solid fa-star"></i></li>
+                                        <li><i class="fa-solid fa-star"></i></li>
+                                        <li><i class="fa-regular fa-star"></i></li>
+                                        <li class="stars" lang="en">842 reviews</li>
+                                    </ul>
+                                </section>
                             </figcaption>
                         </figure>
                         <figure class="image-container" itemscope itemtype="https://schema.org/Product">
-                            <a href="product.html" itemprop="url">
+                            <a href="product.html" itemprop="url" aria-label="lenke til selve produktet">
                                 <img src="https://picsum.photos/400/400" alt="produkt bilde" itemprop="image">
                             </a>
+                            <meta itemprop="name" content="Product name">
                             <i class="fa-regular fa-heart heart-icon"></i>  
                             <figcaption>
                                 <aside class="price" itemscope itemtype="https://schema.org/Offer">
-                                    <a href="product.html" itemprop="url">
-                                        <h3 itemprop="name">Product name</h3>
+                                    <meta itemprop="priceCurrency" content="NOK">
+                                    <a href="product.html" itemprop="url" aria-label="lenke til selve produktet">
+                                        <h3 itemprop="name" lang="en">Product name</h3>
                                     </a>
-                                    <p>
-                                        <span itemprop="price">1999</span>
-                                        <span itemprop="priceCurrency" content="NOK">Kr</span>
-                                    </p>
+                                    <p itemprop="price">1999</p>
                                 </aside>
-                                <ul class="stars" itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
+                                <section itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
                                     <meta itemprop="ratingValue" content="4.5">
+                                    <meta itemprop="bestRating" content="5">
                                     <meta itemprop="reviewCount" content="842">
-                                    <li><i class="fa-solid fa-star"></i></li>
-                                    <li><i class="fa-solid fa-star"></i></li>
-                                    <li><i class="fa-solid fa-star"></i></li>
-                                    <li><i class="fa-solid fa-star"></i></li>
-                                    <li><i class="fa-regular fa-star"></i></li>
-                                    <li class="stars">842 reviews</li>
-                                </ul>
+                                    <ul class="stars">
+                                        <li><i class="fa-solid fa-star"></i></li>
+                                        <li><i class="fa-solid fa-star"></i></li>
+                                        <li><i class="fa-solid fa-star"></i></li>
+                                        <li><i class="fa-solid fa-star"></i></li>
+                                        <li><i class="fa-regular fa-star"></i></li>
+                                        <li class="stars" lang="en">842 reviews</li>
+                                    </ul>
+                                </section>
                             </figcaption>
                         </figure>
                         <figure class="image-container" itemscope itemtype="https://schema.org/Product">
-                            <a href="product.html" itemprop="url">
+                            <a href="product.html" itemprop="url" aria-label="lenke til selve produktet">
                                 <img src="https://picsum.photos/400/400" alt="produkt bilde" itemprop="image">
                             </a>
+                            <meta itemprop="name" content="Product name">
                             <i class="fa-regular fa-heart heart-icon"></i>
                             <figcaption>
                                 <aside class="price" itemscope itemtype="https://schema.org/Offer">
-                                    <a href="product.html" itemprop="url">
-                                        <h3 itemprop="name">Product name</h3>
+                                    <meta itemprop="priceCurrency" content="NOK">
+                                    <a href="product.html" itemprop="url" aria-label="lenke til selve produktet">
+                                        <h3 itemprop="name" lang="en">Product name</h3>
                                     </a>
-                                    <p>
-                                        <span itemprop="price">1999</span>
-                                        <span itemprop="priceCurrency" content="NOK">Kr</span>
-                                    </p>
+                                    <p itemprop="price">1999 Kr</p>
                                 </aside>
-                                <ul class="stars" itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
+                                <section itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
                                     <meta itemprop="ratingValue" content="4.5">
+                                    <meta itemprop="bestRating" content="5">
                                     <meta itemprop="reviewCount" content="842">
-                                    <li><i class="fa-solid fa-star"></i></li>
-                                    <li><i class="fa-solid fa-star"></i></li>
-                                    <li><i class="fa-solid fa-star"></i></li>
-                                    <li><i class="fa-solid fa-star"></i></li>
-                                    <li><i class="fa-regular fa-star"></i></li>
-                                    <li class="stars">842 reviews</li>
-                                </ul>
+                                    <ul class="stars">
+                                        <li><i class="fa-solid fa-star"></i></li>
+                                        <li><i class="fa-solid fa-star"></i></li>
+                                        <li><i class="fa-solid fa-star"></i></li>
+                                        <li><i class="fa-solid fa-star"></i></li>
+                                        <li><i class="fa-regular fa-star"></i></li>
+                                        <li class="stars" lang="en">842 reviews</li>
+                                    </ul>
+                                </section>
                             </figcaption>
                         </figure>
                         <figure class="image-container" itemscope itemtype="https://schema.org/Product">
-                            <a href="product.html" itemprop="url">
+                            <a href="product.html" itemprop="url" aria-label="lenke til selve produktet">
                                 <img src="https://picsum.photos/400/400" alt="produkt bilde" itemprop="image">
                             </a>
+                            <meta itemprop="name" content="Product name">
                             <i class="fa-regular fa-heart heart-icon"></i>
                             <figcaption>
                                 <aside class="price" itemscope itemtype="https://schema.org/Offer">
-                                    <a href="product.html" itemprop="url">
-                                        <h3 itemprop="name">Product name</h3>
+                                    <meta itemprop="priceCurrency" content="NOK">
+                                    <a href="product.html" itemprop="url" aria-label="lenke til selve produktet">
+                                        <h3 itemprop="name" lang="en">Product name</h3>
                                     </a>
-                                    <p>
-                                        <span itemprop="price">1999</span>
-                                        <span itemprop="priceCurrency" content="NOK">Kr</span>
-                                    </p>
+                                    <p itemprop="price">1999 Kr</p>
                                 </aside>
-                                <ul class="stars" itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
+                                <section itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
                                     <meta itemprop="ratingValue" content="4.5">
+                                    <meta itemprop="bestRating" content="5">
                                     <meta itemprop="reviewCount" content="842">
-                                    <li><i class="fa-solid fa-star"></i></li>
-                                    <li><i class="fa-solid fa-star"></i></li>
-                                    <li><i class="fa-solid fa-star"></i></li>
-                                    <li><i class="fa-solid fa-star"></i></li>
-                                    <li><i class="fa-regular fa-star"></i></li>
-                                    <li class="stars">842 reviews</li>
-                                </ul>
+                                    <ul class="stars">
+                                        <li><i class="fa-solid fa-star"></i></li>
+                                        <li><i class="fa-solid fa-star"></i></li>
+                                        <li><i class="fa-solid fa-star"></i></li>
+                                        <li><i class="fa-solid fa-star"></i></li>
+                                        <li><i class="fa-regular fa-star"></i></li>
+                                        <li class="stars" lang="en">842 reviews</li>
+                                    </ul>
+                                </section>
                             </figcaption>
                         </figure>
                     </article>
@@ -250,159 +262,142 @@
                         <figure class="category-box" id="category-box1" itemscope itemtype="https://schema.org/CategoryCode">
                             <img src="img/grass.jpg" alt="green grass field" itemprop="image">
                             <!--Bildet er tatt av <a href="https://pixabay.com/no/users/shapkasushami-2537915/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3089790">Aleksey Kutsar</a> fra <a href="https://pixabay.com/no//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3089790">Pixabay</a>-->
-                            <h4 itemprop="name">CATEGORY 1</h4>
+                            <h4 itemprop="name" lang="en">CATEGORY 1</h4>
                         </figure>
                         <figure class="category-box" id="category-box2">
                             <img src="img/tulip.jpg" alt="purple tulip" itemprop="image">
                             <!--Bildet er tatt av <a href="https://pixabay.com/no/users/thomasjahnfoto-12306116/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=4155890">Thomas</a> fra <a href="https://pixabay.com/no//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=4155890">Pixabay</a>-->
-                            <h4 itemprop="name">CATEGORY 2</h4>
+                            <h4 itemprop="name" lang="en">CATEGORY 2</h4>
                         </figure>
                         <figure class="category-box" id="category-box3">
                             <img src="img/mountains.jpg" alt="mountains" itemprop="image">
                             <!--Bildet er tatt av <a href="https://pixabay.com/no/users/gernotbra-10791888/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7989160">GernotBra</a> fra <a href="https://pixabay.com/no//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7989160">Pixabay</a>-->
-                            <h4 itemprop="name">CATEGORY 3</h4>
+                            <h4 itemprop="name" lang="en">CATEGORY 3</h4>
                         </figure>
                         <figure class="category-box" id="category-box4">
                             <img src="img/cherry.jpg" alt="cherry branches" itemprop="image">
                             <!--Bildet er tatt av <a href="https://pixabay.com/no/users/shell_ghostcage-2016503/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1225186">For commercial use, some photos need attention.</a> fra <a href="https://pixabay.com/no//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1225186">Pixabay</a>-->
-                            <h4 itemprop="name">CATEGORY 4</h4>
+                            <h4 itemprop="name" lang="en">CATEGORY 4</h4>
                         </figure>
                         <figure class="category-box" id="category-box5">
                             <img src="img/office.jpg" alt="blurred office" itemprop="image">
                             <!--Bildet er tatt av <a href="https://pixabay.com/no/users/ha11ok-1785462/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2926794">ha11ok</a> fra <a href="https://pixabay.com/no//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2926794">Pixabay</a>-->
-                            <h4 itemprop="name">CATEGORY 5</h4>
+                            <h4 itemprop="name" lang="en">CATEGORY 5</h4>
                         </figure>
                     </article>
                 </section>
-                <section id="review" itemscope itemtype="https://schema.org/Review" itemprop="review">
+                <section id="review">
                     <h3>Anmeldelser</h3>  
                     <div class="scroll-container">
-                        <article class="review-card" itemscope itemprop="review" itemtype="https://schema.org/Review">
+                        <article class="review-card">
                             <figure>
-                                <img src="https://picsum.photos/id/433/400/400" alt="selfie bear" itemprop="image">
-                                <h5 itemprop="author" itemscope itemtype="https://schema.org/Person">
-                                    <span itemprop="name">Jørn Bjørn</span>
-                                </h5>
-                                    <ul class="stars">
-                                        <li><i class="fa-solid fa-star"></i></li>
-                                        <li><i class="fa-solid fa-star"></i></li>
-                                        <li><i class="fa-solid fa-star"></i></li>
-                                        <li><i class="fa-regular fa-star"></i></li>
-                                        <li><i class="fa-regular fa-star"></i></li>
-                                    </ul>
-                                <p itemprop="reviewBody">Food ipsum dolor amet spare ribs frankfurter apples hamburger meatloaf. Jicama carrots jerky Artichoke cucumber Kohlrabi Asparagus venison Mushrooms Tomatillo Eggplant Chives tenderloin Leeks spices.</p>
-                                <meta itemprop="ratingValue" content="3">
-                                <meta itemprop="bestRating" content="5">
+                                <img src="https://picsum.photos/id/433/400/400" alt="selfie bear">
+                                <h5>Jørn Bjørn</h5>   
+                                <ul class="stars">
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-regular fa-star"></i></li>
+                                    <li><i class="fa-regular fa-star"></i></li>
+                                </ul>
+                                <p>Food ipsum dolor amet spare ribs frankfurter apples hamburger meatloaf. Jicama carrots jerky Artichoke cucumber Kohlrabi Asparagus venison Mushrooms Tomatillo Eggplant Chives tenderloin Leeks spices.</p>
                             </figure>
                         </article>
-                        <article class="review-card" itemscope itemprop="review" itemtype="https://schema.org/Review">
+                        <article class="review-card">
                             <figure>
-                                <img src="https://picsum.photos/id/582/400/400" alt="selfie wolf" itemprop="image">
-                                <h5 itemprop="author" itemscope itemtype="https://schema.org/Person">
-                                    <span itemprop="name">Ulf Ulv</span>
-                                </h5>
-                                    <ul class="stars">
-                                        <li><i class="fa-solid fa-star"></i></li>
-                                        <li><i class="fa-solid fa-star"></i></li>
-                                        <li><i class="fa-solid fa-star"></i></li>
-                                        <li><i class="fa-solid fa-star"></i></li>
-                                        <li><i class="fa-regular fa-star"></i></li>
-                                    </ul>
-                                <p itemprop="reviewBody">Food ipsum dolor amet spare ribs frankfurter apples hamburger meatloaf. Jicama carrots jerky Artichoke cucumber Kohlrabi Asparagus venison Mushrooms Tomatillo Eggplant Chives tenderloin Leeks spices.</p>
-                                <meta itemprop="ratingValue" content="4">
-                                <meta itemprop="bestRating" content="5">
+                                <img src="https://picsum.photos/id/582/400/400" alt="selfie wolf">
+                                <h5>Ulf Ulv</h5>
+                                <ul class="stars">
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-regular fa-star"></i></li>
+                                </ul>
+                                <p>Food ipsum dolor amet spare ribs frankfurter apples hamburger meatloaf. Jicama carrots jerky Artichoke cucumber Kohlrabi Asparagus venison Mushrooms Tomatillo Eggplant Chives tenderloin Leeks spices.</p>
                             </figure>
                         </article>
-                        <article class="review-card" itemscope itemprop="review" itemtype="https://schema.org/Review">
+                        <article class="review-card">
                             <figure>
-                                <img src="https://picsum.photos/id/783/400/400" alt="selfie monkey" itemprop="image">
-                                <h5 itemprop="author" itemscope itemtype="https://schema.org/Person">
-                                    <span itemprop="name">Ape Leif</span>
-                                </h5>
-                                    <ul class="stars">
-                                        <li><i class="fa-solid fa-star"></i></li>
-                                        <li><i class="fa-solid fa-star"></i></li>
-                                        <li><i class="fa-solid fa-star"></i></li>
-                                        <li><i class="fa-regular fa-star"></i></li>
-                                        <li><i class="fa-regular fa-star"></i></li>
-                                    </ul>
-                                <p itemprop="reviewBody">Food ipsum dolor amet spare ribs frankfurter apples hamburger meatloaf. Jicama carrots jerky Artichoke cucumber Kohlrabi Asparagus venison Mushrooms Tomatillo Eggplant Chives tenderloin Leeks spices.</p>
-                                <meta itemprop="ratingValue" content="3">
-                                <meta itemprop="bestRating" content="5">
+                                <img src="https://picsum.photos/id/783/400/400" alt="selfie monkey">
+                                <h5>Ape Leif</h5>
+                                <ul class="stars">
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-regular fa-star"></i></li>
+                                    <li><i class="fa-regular fa-star"></i></li>
+                                </ul>
+                                <p>Food ipsum dolor amet spare ribs frankfurter apples hamburger meatloaf. Jicama carrots jerky Artichoke cucumber Kohlrabi Asparagus venison Mushrooms Tomatillo Eggplant Chives tenderloin Leeks spices.</p>
                             </figure>
                         </article>
-                        <article class="review-card" itemscope itemprop="review" itemtype="https://schema.org/Review">
+                        <article class="review-card">
                             <figure>
-                                <img src="https://picsum.photos/id/1074/400/400" alt="selfie lion" itemprop="image">
-                                <h5 itemprop="author" itemscope itemtype="https://schema.org/Person">
-                                    <span itemprop="name">Simba??</span>
-                                </h5>
-                                    <ul class="stars">
-                                        <li><i class="fa-solid fa-star"></i></li>
-                                        <li><i class="fa-solid fa-star"></i></li>
-                                        <li><i class="fa-regular fa-star"></i></li>
-                                        <li><i class="fa-regular fa-star"></i></li>
-                                        <li><i class="fa-regular fa-star"></i></li>
-                                    </ul>
-                                <p itemprop="reviewBody">Food ipsum dolor amet spare ribs frankfurter apples hamburger meatloaf. Jicama carrots jerky Artichoke cucumber Kohlrabi Asparagus venison Mushrooms Tomatillo Eggplant Chives tenderloin Leeks spices.</p>
-                                <meta itemprop="ratingValue" content="2">
-                                <meta itemprop="bestRating" content="5">
+                                <img src="https://picsum.photos/id/1074/400/400" alt="selfie lion">
+                                <h5>Simba??</h5>
+                                <ul class="stars">
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-solid fa-star"></i></li>
+                                    <li><i class="fa-regular fa-star"></i></li>
+                                    <li><i class="fa-regular fa-star"></i></li>
+                                    <li><i class="fa-regular fa-star"></i></li>
+                                </ul>
+                                <p>Food ipsum dolor amet spare ribs frankfurter apples hamburger meatloaf. Jicama carrots jerky Artichoke cucumber Kohlrabi Asparagus venison Mushrooms Tomatillo Eggplant Chives tenderloin Leeks spices.</p>
                             </figure>
                         </article>
                     </div>
                 </section>
             </main>
             <hr id="main-hr">
-            <footer itemscope itemtype="https://schema.org/Organization">
+            <footer itemscope itemtype="https://schema.org/WPFooter">
                 <section id="footer-logo">
-                    <a href="index.html"><h2>Logo</h2></a>
-                    <p>Lorem Khaled Ipsum is a major key to success. Eliptical talk.</p>
+                    <a href="index.html" aria-label="Logo som kan sende deg tilbake til forside">
+                        <h2 itemprop="name">Logo</h2>
+                    </a>
+                    <p lang="en">Lorem Khaled Ipsum is a major key to success. Eliptical talk.</p>
                 </section>
                 <section id="footer-flex-container">
-                    <section id="footer-contact">
+                    <section id="footer-contact" itemscope itemtype="https://schema.org/Organization">
                         <article>
                             <h6>Kontakt</h6>
                             <p class="contact-icons">
                                 <i class="fa-solid fa-location-dot"></i>
-                                <strong>Adresse:</strong> 
-                                <span itemprop="address" itemscope itemtype="https://org/PostalAddress">
-                                    <span itemprop="streetAddress">B R A Veien 4</span>, 
-                                    <span itemprop="postalCode">1757</span> 
-                                    <span itemprop="addressLocality">Halden</span>
-                                </span>
+                                <strong>Adresse:</strong>B R A Veien 4, 1757 Halden
                             </p>
                             <p class="contact-icons">
                                 <i class="fa-solid fa-phone"></i>
-                                <strong>Telefon:</strong> <span itemprop="telephone">69 60 80 00</span>
+                                <strong>Telefon:</strong>69 60 80 00
                             </p>
                             <p class="contact-icons">
                                 <i class="fa-solid fa-envelope"></i>
-                                <strong>E-post:</strong> <span itemprop="email">halden@hiof.no</span>
+                                <strong>E-post:</strong>halden@hiof.no
                             </p>
                             <p class="contact-icons">
                                 <i class="fa-solid fa-clock"></i>
-                                <strong>Åpningstider:</strong> <span itemprop="openingHours">Stenger 15:00</span>
+                                <strong>Åpningstider:</strong>
+                                Stenger 15:00
                             </p>
                         </article>
                     </section>
-                    <section id="footer-shortcut">
+                    <section id="footer-shortcut" itemscope itemtype="https://schema.org/SiteNavigationElement">
                         <h6>Snarveier</h6>
                         <nav>
                             <ul>
-                                <li><a href="#popular-products" itemprop="url">Produkter</a></li>
-                                <li><a href="#exlore-categories" itemprop="url">Kategorier</a></li>
-                                <li><a href="#footer-contact" itemprop="url">Kontakt oss</a></li>
+                                <li><a href="#popular-products" aria-label="lenke til produkter" itemprop="url">Produkter</a></li>
+                                <li><a href="#explore-categories" aria-label="lenke til kategorier" itemprop="url">Kategorier</a></li>
+                                <li><a href="#footer-contact" aria-label="lenke til kontaktinformasjon" itemprop="url">Kontakt oss</a></li>
+                                <li><a href="../doc/WCAG.pdf" aria-label="Lenke til tilgjengelighetserklæringsdokument">Tilgjengelighetserklæring</a></li>
                             </ul>
                         </nav>
                     </section>
-                    <section id="footer-social" itemscope itemtype="https://schema.org/SocialMediaPosting">
+                    <section id="footer-social">
                         <h6>Sosiale Medier</h6>
                         <nav>
                             <ul id="social-icons">
-                                <li><a href="https://www.instagram.com/" itemprop="url"><i class="fa-brands fa-instagram"></i></a></li>
-                                <li><a href="https://www.facebook.com/" itemprop="url"><i class="fa-brands fa-facebook"></i></a></li>
-                                <li><a href="https://www.linkedin.com/" itemprop="url"><i class="fa-brands fa-linkedin"></i></a></li>
-                                <li><a href="https://no.pinterest.com/" itemprop="url"><i class="fa-brands fa-pinterest"></i></a></li>
+                                <li><a href="https://www.instagram.com/" aria-label="lenke til instagram"><i class="fa-brands fa-instagram"></i></a></li>
+                                <li><a href="https://www.facebook.com/" aria-label="Lenke til facebook"><i class="fa-brands fa-facebook"></i></a></li>
+                                <li><a href="https://www.linkedin.com/" aria-label="lenke til Linkedin"><i class="fa-brands fa-linkedin"></i></a></li>
+                                <li><a href="https://no.pinterest.com/" aria-label="lenke til pinterest"><i class="fa-brands fa-pinterest"></i></a></li>
                             </ul>
                         </nav>
                     </section>

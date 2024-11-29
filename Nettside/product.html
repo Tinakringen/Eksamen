@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nb">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="ikoner/css/solid.css">
         <link rel="stylesheet" href="ikoner/css/fontawesome.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet" href="ikoner/css/regular.css">
         <link rel="stylesheet" href="ikoner/css/brands.css">
         <link rel="stylesheet" href="css/main.css">
         <title>Eksamensoppgave</title>
     </head>
-    <body>
+    <body itemscope itemtype="https://schema.org/WebPage">
         <nav class="skip">
             <ul>
                 <li><a href="#søk">Hopp til søk</a></li>
@@ -25,39 +25,51 @@
             <header>
                 <nav id="nav-search">
                     <form id="søk">
-                        <input id="søkebar" type="search" placeholder="Søk her" title="Search">
-                        <button id="knapp" type="submit" title="Søk etter"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        <input id="søkebar" type="search" placeholder="Søk her" title="Search" aria-label="søk her">
+                        <button id="knapp" type="submit" title="Søk etter" aria-label="søk"><i class="fa-solid fa-magnifying-glass"></i></button>
                     </form>
                 </nav>
                 <nav class="main-nav">
                     <ul class="main-nav">
-                        <li><a href="index.html">Hjem</a></li>
-                        <li><a href="index.html#popular-products">Produkter</a></li>
-                        <li><a href="index.html" id="logo">Logo</a></li>
-                        <li><a href="index.html#explore-categories">Kategorier</a></li>
-                        <li><a href="#footer-contact">Kontakt oss</a></li>
+                        <li><a href="index.html" aria-label="lenke til hjemmeside">Hjem</a></li>
+                        <li><a href="index.html#popular-products" aria-label="lenke til produkter">Produkter</a></li>
+                        <li><a href="index.html" id="logo" aria-label="logo som lenker til forside">Logo</a></li>
+                        <li><a href="index.html#explore-categories" aria-label="lenke til kategorier">Kategorier</a></li>
+                        <li><a href="#footer-contact" aria-label="lenke til kontaktinformasjon">Kontakt oss</a></li>
                     </ul>
                 </nav>
                 <nav>
                     <ul id="icons">
-                        <li><a href="#"><i class="fa-regular fa-user"></i></a></li>
-                        <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
-                        <li><a href="checkout.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                        <li><a href="#" aria-label="lenke til brukerprofil"><i class="fa-regular fa-user"></i></a></li>
+                        <li><a href="#" aria-label="lenke til favorittmappe"><i class="fa-regular fa-heart"></i></a></li>
+                        <li><a href="checkout.html" aria-label="lenke til shoppingbagen"><i class="fa-solid fa-cart-shopping"></i></a></li>
                     </ul>
                 </nav>
             </header>
             <span>
-                <a id="top-btn" href="#nav-search"><i class="fa-solid fa-arrow-up"></i></a>
+                <a id="top-btn" href="#nav-search" aria-label="lenke som sender deg til toppen av siden"><i class="fa-solid fa-arrow-up"></i></a>
             </span>
             <main>
-                <section id="products-nav">
+                <section id="products-nav" itemscope itemtype="https://schema.org/BreadcrumbList">
                     <nav>
                         <ul>
-                            <li class="list-product"><a href="index.html">Hjem</a></li>
+                            <li class="list-product" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                                <meta itemprop="position" content="1">
+                                <a href="index.html" aria-label="lenke til hjemmeside" itemprop="item">Hjem</a>
+                                <meta itemprop="name" content="Hjem">
+                            </li>
                             <li><i class="fa-solid fa-greater-than"></i></li>
-                            <li class="list-product"><a href="index.html">Kategori</a></li>
+                            <li class="list-product" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                                <meta itemprop="position" content="2">
+                                <a href="index.html" aria-label="lenke til kategorier" itemprop="item">Kategori</a>
+                                <meta itemprop="name" content="Kategori">
+                            </li>
                             <li><i class="fa-solid fa-greater-than"></i></li>
-                            <li class="list-product"><a href="#"><strong>Produktnavn</strong></a></li>
+                            <li class="list-product" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                                <meta itemprop="position" content="3">
+                                <a href="#" aria-label="lenke til produktet" itemprop="item"><strong>Produktnavn</strong></a>
+                                <meta itemprop="name" content="Produktnavn">
+                            </li>
                         </ul>
                     </nav>
                 </section>
@@ -70,8 +82,8 @@
                     </article>
                     <section id="product-drop-meny">
                         <section id="product-info">
-                            <h1>Produktnavn</h1>
-                            <a href="#">Merkenavn</a>
+                            <h2>Produktnavn</h2>
+                            <a href="#" aria-label="Lenke til varemerket">Merkenavn</a>
                             <p>799 kr inkl. mva.</p>
                             <p>Farge: <strong>svart</strong></p>
                             <label id="choose-size" for="size">
@@ -85,8 +97,8 @@
                                 </select>
                             </label>
                             <figure id="add-to-cart">
-                                <button id="cartbtn" class="addcart">Legg i handlekurv</button>
-                                <button id="favorite" type="button"><i class="fa-regular fa-heart"></i></button>
+                                <button id="cartbtn" class="addcart" aria-label="Legg i handlekurv">Legg i handlekurv</button>
+                                <button id="favorite" type="button" aria-label="favoritt"><i class="fa-regular fa-heart"></i></button>
                             </figure>
                         </section>
                         <section id="product-description">
@@ -104,7 +116,7 @@
                             <hr class="product-hr">
                             <details class="dropmeny">
                                 <summary>Produktdetaljer</summary>
-                                <p>
+                                <p lang="en">
                                     You should never complain, complaining is a weak emotion, 
                                     you got life, we breathing, we blessed.<br> The weather is amazing, 
                                     walk with me through the pathway of more success. 
@@ -263,7 +275,7 @@
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-regular fa-star"></i>
                                     <i class="fa-regular fa-star"></i>
-                                    <p>
+                                    <p lang="en">
                                         Egg whites, turkey sausage, wheat toast, water. 
                                         Of course they don’t want us to eat our breakfast, so we are going to enjoy our breakfast. 
                                         Bless up.
@@ -275,17 +287,17 @@
                 </div>
                 <section id="similar-products">
                     <h5>Lignende produkter</h5>
-                    <a href="#">
+                    <a href="index.html#popular-products" aria-label="lenke til lignende produkter">
                         Se flere lignende produkter
                         <i class="fa-solid fa-arrow-right"></i> 
                     </a>
                     <div class="scroll-container">
                         <figure class="image-container">
-                            <a href="product.html"><img src="https://picsum.photos/400/400" alt="produkt bilde"></a>
+                            <a href="product.html"><img src="https://picsum.photos/400/400" alt="produkt bilde" aria-label="bilde av produkt"></a>
                             <i class="fa-regular fa-heart heart-icon"></i>
                             <figcaption>
                             <article class="price">
-                                <a href="product.html"><h3>Product name</h3></a>
+                                <a href="product.html" aria-label="Lenke til produkt"><h3>Product name</h3></a>
                                 <p>Kr 1999</p>
                             </article>
                             <ul class="stars">
@@ -299,11 +311,11 @@
                             </figcaption>
                         </figure>
                         <figure class="image-container">
-                            <a href="product.html"><img src="https://picsum.photos/400/400" alt="produkt bilde"></a>
+                            <a href="product.html" aria-label="Lenke til produkt"><img src="https://picsum.photos/400/400" alt="produkt bilde"></a>
                             <i class="fa-regular fa-heart heart-icon"></i>
                             <figcaption>
                             <article class="price">
-                                <a href="product.html"><h3>Product name</h3></a>
+                                <a href="product.html" aria-label="Lenke til produkt"><h3>Product name</h3></a>
                                 <p>Kr 1999</p>
                             </article>
                             <ul class="stars">
@@ -317,11 +329,11 @@
                             </figcaption>
                         </figure>
                         <figure class="image-container">
-                            <a href="product.html"><img src="https://picsum.photos/400/400" alt="produkt bilde"></a>
+                            <a href="product.html" aria-label="Lenke til produkt"><img src="https://picsum.photos/400/400" alt="produkt bilde"></a>
                             <i class="fa-regular fa-heart heart-icon"></i>
                             <figcaption>
                             <article class="price">
-                                <a href="product.html"><h3>Product name</h3></a>
+                                <a href="product.html" aria-label="Lenke til produkt"><h3>Product name</h3></a>
                                 <p>Kr 1999</p>
                             </article>
                             <ul class="stars">
@@ -335,11 +347,11 @@
                             </figcaption>
                         </figure>
                         <figure class="image-container">
-                            <a href="product.html"><img src="https://picsum.photos/400/400" alt="produkt bilde"></a>
+                            <a href="product.html" aria-label="Lenke til produkt"><img src="https://picsum.photos/400/400" alt="produkt bilde"></a>
                             <i class="fa-regular fa-heart heart-icon"></i>
                             <figcaption>
                             <article class="price">
-                                <a href="product.html"><h3>Product name</h3></a>
+                                <a href="product.html" aria-label="Lenke til produkt"><h3>Product name</h3></a>
                                 <p>Kr 1999</p>
                             </article>
                             <ul class="stars">
@@ -353,11 +365,11 @@
                             </figcaption>
                         </figure>
                         <figure class="image-container">
-                            <a href="product.html"><img src="https://picsum.photos/400/400" alt="produkt bilde"></a>
+                            <a href="product.html" aria-label="Lenke til produkt"><img src="https://picsum.photos/400/400" alt="produkt bilde"></a>
                             <i class="fa-regular fa-heart heart-icon"></i>
                             <figcaption>
                             <article class="price">
-                                <a href="product.html"><h3>Product name</h3></a>
+                                <a href="product.html" aria-label="Lenke til produkt"><h3>Product name</h3></a>
                                 <p>Kr 1999</p>
                             </article>
                             <ul class="stars">
@@ -376,8 +388,8 @@
             <hr id="hr-end">
             <footer>
                 <section id="footer-logo">
-                    <a href="index.html"><h2>Logo</h2></a>
-                    <p>Lorem Khaled Ipsum is a major key to success. Eliptical talk.</p>
+                    <a href="index.html" aria-label="Logo som er lenket til forside"><h2>Logo</h2></a>
+                    <p lang="en">Lorem Khaled Ipsum is a major key to success. Eliptical talk.</p>
                 </section>
                 <section id="footer-flex-container">
                     <section id="footer-contact">
@@ -405,9 +417,10 @@
                         <h6>Snarveier</h6>
                         <nav>
                             <ul>
-                                <li><a href="#">Produkter</a></li>
-                                <li><a href="#">Kategorier</a></li>
-                                <li><a href="#">Kontakt oss</a></li>
+                                <li><a href="index.html#popular-products" aria-label="lenke til produkter">Produkter</a></li>
+                                <li><a href="index.html#explore-categories" aria-label="Lenke til kategorier">Kategorier</a></li>
+                                <li><a href="#footer-contact" aria-label="lenke til kontaktinformasjon">Kontakt oss</a></li>
+                                <li><a href="../doc/WCAG.pdf" aria-label="Lenke til tilgjengelighetserklæringsdokument">Tilgjengelighetserklæring</a></li>
                             </ul>
                         </nav>
                     </section>
@@ -415,10 +428,10 @@
                         <h6>Sosiale Medier</h6>
                         <nav>
                             <ul id="social-icons">
-                                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                                <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
-                                <li><a href="#"><i class="fa-brands fa-pinterest"></i></a></li>
+                                <li><a href="https://www.instagram.com/" aria-label="lenke til instagram"><i class="fa-brands fa-instagram"></i></a></li>
+                                <li><a href="https://www.facebook.com/" aria-label="Lenke til facebook"><i class="fa-brands fa-facebook"></i></a></li>
+                                <li><a href="https://www.linkedin.com/" aria-label="lenke til Linkedin"><i class="fa-brands fa-linkedin"></i></a></li>
+                                <li><a href="https://no.pinterest.com/" aria-label="lenke til pinterest"><i class="fa-brands fa-pinterest"></i></a></li>
                             </ul>
                         </nav>
                     </section>

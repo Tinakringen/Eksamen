@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nb">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="ikoner/css/solid.css">
         <link rel="stylesheet" href="ikoner/css/fontawesome.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet" href="ikoner/css/regular.css">
         <link rel="stylesheet" href="ikoner/css/brands.css">
         <link rel="stylesheet" href="css/main.css">
         <title>Eksamensoppgave</title>
     </head>
-    <body>
+    <body itemscope itemtype="https://schema.org/WebPage">
         <nav class="skip">
             <ul>
                 <li><a href="#søk">Hopp til søk</a></li>
@@ -26,33 +26,33 @@
             <header>
                 <nav id="nav-search">
                     <form id="søk">
-                        <input id="søkebar" type="search" placeholder="Søk her" title="Search">
-                        <button id="knapp" type="submit" title="Søk etter"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        <input id="søkebar" type="search" placeholder="Søk her" title="Search" aria-label="søk">
+                        <button id="knapp" type="submit" title="Søk etter" aria-label="søk"><i class="fa-solid fa-magnifying-glass"></i></button>
                     </form>
                 </nav>
                 <nav class="main-nav">
                     <ul class="main-nav">
-                        <li><a href="index.html">Hjem</a></li>
-                        <li><a href="index.html#popular-products">Produkter</a></li>
-                        <li><a href="index.html" id="logo">Logo</a></li>
-                        <li><a href="index.html#explore-categories">Kategorier</a></li>
-                        <li><a href="#footer-contact">Kontakt oss</a></li>
+                        <li><a href="index.html" aria-label="Lenke til hjemmeside">Hjem</a></li>
+                        <li><a href="index.html#popular-products" aria-label="Lenke til produkter">Produkter</a></li>
+                        <li><a href="index.html" id="logo" aria-label="Logo du kan trykke på for å komme til forside">Logo</a></li>
+                        <li><a href="index.html#explore-categories" aria-label="Lenke til kategoriseksjon">Kategorier</a></li>
+                        <li><a href="#footer-contact" aria-label="Lenke til kontaktinformasjon">Kontakt oss</a></li>
                     </ul>
                 </nav>
                 <nav>
                     <ul id="icons">
-                        <li><a href="#"><i class="fa-regular fa-user"></i></a></li>
-                        <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
-                        <li><a href="checkout.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                        <li><a href="#" aria-label="Lenke til brukerprofil"><i class="fa-regular fa-user"></i></a></li>
+                        <li><a href="#" aria-label="lenke til favorittmappe"><i class="fa-regular fa-heart"></i></a></li>
+                        <li><a href="checkout.html" aria-label="Lenke til shoppingbag"><i class="fa-solid fa-cart-shopping"></i></a></li>
                     </ul>
                 </nav>
             </header>
             <span>
-                <a id="top-btn" href="#nav-search"><i class="fa-solid fa-arrow-up"></i></a>
+                <a id="top-btn" href="#nav-search" aria-label="lenke som sender deg til toppen av siden"><i class="fa-solid fa-arrow-up"></i></a>
             </span>
             <main id="main-checkout">
                 <nav id="back">
-                    <a href="index.html" id="back-to-main">
+                    <a href="index.html" id="back-to-main" aria-label="Lenke som sender deg tilbake til forside">
                         <i class="fa-solid fa-arrow-left"></i>
                         Fortsett å handle
                     </a>
@@ -61,7 +61,7 @@
                 <section id="checkout-section">
                     <h2>1. SHOPPINGBAGEN DIN</h2>
                     <article class="checkout-card">
-                        <img src="https://picsum.photos/id/21/400/400" alt="white high heels">
+                        <img src="https://picsum.photos/id/21/400/400" alt="hvite høye hæler">
                         <aside class="checkout-product-info">
                             <h3><strong>PRODUCT NAME</strong></h3> 
                             <p>Kr 599</p>
@@ -78,7 +78,7 @@
                             </label>
                             <label class="options">
                                 Antall
-                                <input type="number" placeholder="1" class="number" min="1" max="10">
+                                <input type="number" placeholder="1" class="number" min="1" max="10" aria-label="skriv inn antall du ønsker">
                             </label>
                         </aside>
                         <figure class="shop-icons">
@@ -87,7 +87,7 @@
                         </figure>
                     </article>
                     <article class="checkout-card">
-                        <img src="https://picsum.photos/id/21/400/400" alt="white high heels">
+                        <img src="https://picsum.photos/id/21/400/400" alt="hvite høye hæler">
                         <aside class="checkout-product-info">
                             <h3><strong>PRODUCT NAME</strong></h3> 
                             <p>Kr 599</p>
@@ -104,7 +104,7 @@
                             </label>
                             <label class="options">
                                 Antall
-                                <input type="number" placeholder="1" class="number" min="1" max="10">
+                                <input type="number" placeholder="1" class="number" min="1" max="10" aria-label="skriv inn antall du ønsker">
                             </label>
                         </aside>
                         <figure class="shop-icons">
@@ -113,7 +113,7 @@
                         </figure>
                     </article>
                     <article class="checkout-card">
-                        <img src="https://picsum.photos/id/21/400/400" alt="white high heels">
+                        <img src="https://picsum.photos/id/21/400/400" alt="hvite høye hæler">
                         <aside class="checkout-product-info">
                             <h3><strong>PRODUCT NAME</strong></h3> 
                             <p>Kr 599</p>
@@ -130,7 +130,7 @@
                             </label>
                             <label class="options">
                                 Antall
-                                <input type="number" placeholder="1" class="number" min="1" max="10">
+                                <input type="number" placeholder="1" class="number" min="1" max="10" aria-label="skriv inn antall du ønsker">
                             </label>
                         </aside>
                         <figure class="shop-icons">
@@ -142,38 +142,42 @@
                 <section id="checkout-container2">
                     <h2>2. DINE OPPLYSNINGER</h2>
                     <H3>Leveringsadresse</H3>
-                    <form>
+                    <form method="post">
                         <section class="form-group">
                             <article class="form-label">
                                 <label for="fname">Fornavn</label><br>
-                                <input type="text" id="fname" name="fname" placeholder="Tina*"><br>
+                                <input type="text" id="fname" name="fname" placeholder="Tina*" aria-label="skriv inn fornavn" maxlength="50" pattern="[A-Za-zæøåÆØÅ ]{2,}" required><br>
                             </article>
                             <article class="form-label">
                                 <label for="lname">Etternavn</label><br>
-                                <input type="text" id="lname" name="lname" placeholder="Turner*"><br>
+                                <input type="text" id="lname" name="lname" placeholder="Turner*" aria-label="skriv inn etternavn" maxlength="50" pattern="[A-Za-zæøåÆØÅ ]{2,}" required><br>
                             </article>
                         </section>
+                        <!--PROMPT: Hvilken pattern er greit å bruke til gateadresse?-->
+                        <!--RESULTS: Eksempel på pattern til gateadresse: pattern="[A-Za-z0-9æøåÆØÅ\s,.'-]{2,}"-->
                         <label for="adress">Gateadresse</label><br>
-                        <input type="text" id="adress" name="adress" placeholder="Melkeveien 123*"><br>
+                        <input type="text" id="adress" name="adress" placeholder="Melkeveien 123*" aria-label="skriv inn addresse" pattern="[A-Za-z0-9æøåÆØÅ\s,.'-]{2,}" required><br>
                         <section class="form-group">
                             <article class="form-label">
                                 <label for="postcode">Postnummer</label><br>
-                                <input type="number" id="postcode" name="postcode" placeholder="1671*"><br>
+                                <input type="number" id="postcode" name="postcode" placeholder="1671*" aria-label="skriv inn postkoden" required><br>
                             </article>
                             <article class="form-label">
                                 <label for="place">Poststed</label><br>
-                                <input type="text" id="place" name="place" placeholder="Halden*"><br>
+                                <!--PROMPT: hvilke pattern er greit å bruke til poststed?-->
+                                <!--RESULTS: Eksempel på pattern til poststed: pattern="^[a-zA-ZæøåÆØÅ ]+$"-->
+                                <input type="text" id="place" name="place" placeholder="Halden*" aria-label="skriv inn poststed" pattern="^[a-zA-ZæøåÆØÅ ]+$" required><br>
                             </article>
                         </section>
                     </form> 
                     <h3>Kontaktinformasjon</h3>
                     <form>
                         <label for="email">E-post</label><br>
-                        <input type="email" id="email" name="email" placeholder="tina-pusen@gmail.no*"><br>
+                        <input type="email" id="email" name="email" placeholder="tina-pusen@gmail.no*" aria-label="skriv inn email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required><br>
                         <label for="phone">Telefon</label><br>
-                        <input type="tel" id="phone" name="phone" placeholder="+47123***12"><br>
-                        <button class="save-button" type="button" value="text">Lagre</button>
-                        <button id="cancel-button" type="reset" value="reset">Avbryt</button>
+                        <input type="tel" id="phone" name="phone" placeholder="+47123***12" aria-label="skriv inn telefonnummer" pattern="[0-9]{8,12}" required><br>
+                        <button class="save-button" type="button" value="text" aria-label="lagre">Lagre</button>
+                        <button id="cancel-button" type="reset" value="reset" aria-label="Avbryt">Avbryt</button>
                     </form>
                 </section>
                 <section id="checkout-container3">
@@ -181,7 +185,7 @@
                     <h3>LEVERINGSVALG</h3>
                     <form action="delivery-card">
                         <article class="delivery-card">
-                            <input type="radio" name="radio" id="radio1" value="option1" required>
+                            <input type="radio" name="radio" id="radio1" value="option1" aria-label="velg express hjemlevering" required>
                             <label for="radio1"><strong>Express Hjemlevering</strong></label>
                             <p class="days">3-4 virkedager</p>
                             <p class="price-logo">59 kr <i class="fa-solid fa-truck"></i></p>
@@ -193,13 +197,13 @@
                             </p>
                         </article>
                         <article class="delivery-card">
-                            <input type="radio" name="radio" id="radio2" value="option2" required>
+                            <input type="radio" name="radio" id="radio2" value="option2" aria-label="Velg express pakke til utleveringssted" required>
                             <label for="radio2"><strong>Express Pakke til utleveringssted</strong></label>
                             <p class="days">1-3 virkedager</p>
                             <p class="price-logo">59 kr <i class="fa-solid fa-truck"></i></p>
                         </article>
                         <article class="delivery-card">
-                            <input type="radio" name="radio" id="radio3" value="option3" required>
+                            <input type="radio" name="radio" id="radio3" value="option3" aria-label="Standard hjemlevering" required>
                             <label for="radio3"><strong>Standard hjemlevering</strong></label>
                             <p class="days">5-8 virkedager</p>
                             <p class="price-logo">Gratis <i class="fa-solid fa-box"></i></p>
@@ -214,15 +218,15 @@
                     <h3>BETAL MED KORT <i class="fa-solid fa-credit-card"></i></h3>
                     <form id="payment-card">
                         <label for="card">Kortnummer</label><br>
-                        <input type="number" id="card" name="card" placeholder="1234 5678 9101 1121*"><br>
+                        <input type="number" id="card" name="card" placeholder="1234 5678 9101 1121*" aria-label="kortnummer" required><br>
                         <section class="payment-row">
                             <article class="payment-group">
                                 <label for="date">Utløpsdato</label><br>
-                                <input type="date" id="date" name="date"><br>
+                                <input type="date" id="date" name="date" aria-label="skriv inn utløpsdato" required><br>
                             </article>
                             <article class="payment-group">
                                 <label for="cvc">CVC/CVV</label><br>
-                                <input type="number" id="cvc" name="cvc" placeholder="CVC/CVV"><br>
+                                <input type="number" id="cvc" name="cvc" placeholder="CVC/CVV" aria-label="skriv inn CVC" required><br>
                             </article>
                         </section>
                         <hr>
@@ -230,18 +234,18 @@
                     <article id="purchase">
                         <h4>Å betale inkl. mva. </h4>
                         <p id="price-kr">1 199 kr</p>
-                        <button class="save-button" type="button" value="text">Fullfør kjøp</button>
+                        <button class="save-button" type="button" value="text" aria-label="Fullfør kjøp">Fullfør kjøp</button>
                         <p id="correct-info">
                             Du bekrefter herved at opplysningene og dokumentene du har oppgitt er korrekte og fullstendige.
                             Leverandøren forbeholder seg retten til å heve eller avslutte avtaleforholdet
                             dersom det foreligger uriktige eller fullstendige opplysninger
                         </p>
                         <label for="newsletter">
-                            <input type="checkbox" id="newsletter" required>
+                            <input type="checkbox" id="newsletter" required aria-label="Huk av for nyhetsbrev">
                             Ja takk! Send nyhetsbrev til meg.
                         </label>
                         <label for="sms">
-                            <br><input type="checkbox" id="sms" required>
+                            <br><input type="checkbox" id="sms" required aria-label="Huk av for sms om tilbud og nyheter">
                             Jeg ønsker å motta tekstmeldinger med tilbud og nyheter.
                         </label> 
                     </article>
@@ -250,8 +254,10 @@
             <hr id="checkout-hr">
             <footer>
                 <section id="footer-logo">
-                    <a href="index.html"><h2>Logo</h2></a>
-                    <p>Lorem Khaled Ipsum is a major key to success. Eliptical talk.</p>
+                    <a href="index.html" aria-label="Logo som kan sende deg tilbake til forside">
+                        <h2>Logo</h2>
+                    </a>
+                    <p lang="en">Lorem Khaled Ipsum is a major key to success. Eliptical talk.</p>
                 </section>
                 <section id="footer-flex-container">
                     <section id="footer-contact">
@@ -259,19 +265,19 @@
                             <h6>Kontakt</h6>
                             <p class="contact-icons">
                                 <i class="fa-solid fa-location-dot"></i>
-                                <strong>Adresse:</strong> B R A Veien 4, 1757 Halden
+                                <strong>Adresse:</strong>B R A Veien 4,1757 Halden
                             </p>
                             <p class="contact-icons">
                                 <i class="fa-solid fa-phone"></i>
-                                <strong>Telefon:</strong> 69 60 80 00
+                                <strong>Telefon:</strong>69 60 80 00
                             </p>
                             <p class="contact-icons">
                                 <i class="fa-solid fa-envelope"></i>
-                                <strong>E-post:</strong> halden@hiof.no
+                                <strong>E-post:</strong>halden@hiof.no
                             </p>
                             <p class="contact-icons">
                                 <i class="fa-solid fa-clock"></i>
-                                <strong>Åpningstider:</strong> Stenger 15:00
+                                <strong>Åpningstider:</strong>Stenger 15:00
                             </p>
                         </article>
                     </section>
@@ -279,9 +285,10 @@
                         <h6>Snarveier</h6>
                         <nav>
                             <ul>
-                                <li><a href="#">Produkter</a></li>
-                                <li><a href="#">Kategorier</a></li>
-                                <li><a href="#">Kontakt oss</a></li>
+                                <li><a href="index.html#popular-products" aria-label="lenke til produkter">Produkter</a></li>
+                                <li><a href="index.html#explore-categories" aria-label="lenke til kategorier">Kategorier</a></li>
+                                <li><a href="#footer-contact" aria-label="lenke til kontaktinformasjon">Kontakt oss</a></li>
+                                <li><a href="../doc/WCAG.pdf" aria-label="Lenke til tilgjengelighetserklæringsdokument">Tilgjengelighetserklæring</a></li>
                             </ul>
                         </nav>
                     </section>
@@ -289,10 +296,10 @@
                         <h6>Sosiale Medier</h6>
                         <nav>
                             <ul id="social-icons">
-                                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                                <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
-                                <li><a href="#"><i class="fa-brands fa-pinterest"></i></a></li>
+                                <li><a href="https://www.instagram.com/" aria-label="lenke til instagram"><i class="fa-brands fa-instagram"></i></a></li>
+                                <li><a href="https://www.facebook.com/" aria-label="Lenke til facebook"><i class="fa-brands fa-facebook"></i></a></li>
+                                <li><a href="https://www.linkedin.com/" aria-label="lenke til Linkedin"><i class="fa-brands fa-linkedin"></i></a></li>
+                                <li><a href="https://no.pinterest.com/" aria-label="lenke til pinterest"><i class="fa-brands fa-pinterest"></i></a></li>
                             </ul>
                         </nav>
                     </section>
